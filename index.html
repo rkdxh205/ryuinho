@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유인호 - 세종의 기분 좋은 변화</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .minjoo-blue { background-color: #004EA2; }
+        .text-minjoo { color: #004EA2; }
+        .honest-font { font-family: 'Noto Sans KR', sans-serif; font-weight: 700; }
+        .handwriting { font-family: 'Nanum Pen Script', cursive; }
+
+        @media (max-width: 767px) {
+            .hero-indent { margin-left: 2rem !important; }
+            .hero-bg { background-size: cover !important; background-position: center top !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="logo.png" alt="더불어민주당 로고" class="h-10 md:h-14 w-auto bg-transparent">
+                <span class="text-base md:text-2xl font-bold tracking-tight honest-font text-minjoo leading-tight">
+                    <span class="hidden sm:inline">세종특별자치시의원 </span>유인호
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-bold text-gray-600">
+                <a href="#about" class="hover:text-minjoo transition">유인호</a>
+                <a href="#promises" class="hover:text-minjoo transition">5대 공약</a>
+                <a href="#news" class="hover:text-minjoo transition">의정활동</a>
+                <a href="#support" class="hover:text-minjoo transition">후원안내</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-bold text-gray-700 text-lg">
+                <a href="#about" class="hover:text-minjoo transition" onclick="closeMobileMenu()">유인호</a>
+                <a href="#promises" class="hover:text-minjoo transition" onclick="closeMobileMenu()">5대 공약</a>
+                <a href="#news" class="hover:text-minjoo transition" onclick="closeMobileMenu()">의정활동</a>
+                <a href="#support" class="hover:text-minjoo transition" onclick="closeMobileMenu()">후원안내</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 md:pt-20 h-[500px] md:h-[700px] flex items-center overflow-hidden" style="background-color: #002a6e;">
+        <!-- 배경 이미지 -->
+        <div class="absolute inset-0 hero-bg bg-[url('photo1.jpg')] bg-right-bottom" style="background-size: 55%; background-repeat: no-repeat; opacity: 0.85;"></div>
+        <!-- 모바일: 전체 덮는 강한 오버레이 -->
+        <div class="absolute inset-0 md:hidden" style="background: rgba(0,42,110,0.72);"></div>
+        <!-- 데스크탑: 좌우 그라데이션 -->
+        <div class="absolute inset-0 hidden md:block" style="background: linear-gradient(to right, #002a6e 0%, #002a6e 38%, rgba(0,42,110,0.85) 52%, rgba(0,42,110,0.3) 68%, transparent 82%);"></div>
+        <!-- 하단 그라데이션 -->
+        <div class="absolute bottom-0 left-0 right-0 h-24" style="background: linear-gradient(to bottom, transparent, #002a6e);"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 w-full">
+            <div class="text-white max-w-2xl">
+                <div class="inline-block bg-yellow-400 text-blue-900 px-4 md:px-5 py-1.5 md:py-2 rounded-full font-bold mb-6 md:mb-8 text-sm md:text-base tracking-tight">
+                    "검증된 경험, 준비된 재선!"
+                </div>
+                <h1 class="font-black leading-tight mb-8 md:mb-10" style="font-size: clamp(2rem, 6vw, 4.8rem); line-height: 1.18; word-break: keep-all;">
+                    "오늘보다 더<br>
+                    보람찬 <span class="text-yellow-400">보람동,</span><br>
+                    <span class="hero-indent" style="display: inline-block; margin-left: 7rem;"><span class="text-yellow-400">유인호</span>가 이어갑니다."</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stat Section -->
+    <section class="bg-white py-10 md:py-12 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-3 gap-4 md:gap-8 text-center">
+            <div>
+                <p class="text-gray-500 text-xs md:text-sm mb-1">조례발의의안</p>
+                <p class="text-2xl md:text-3xl font-black text-minjoo">469건</p>
+            </div>
+            <div>
+                <p class="text-gray-500 text-xs md:text-sm mb-1">5분발언</p>
+                <p class="text-2xl md:text-3xl font-black text-minjoo">21건</p>
+            </div>
+            <div>
+                <p class="text-gray-500 text-xs md:text-sm mb-1">의정활동</p>
+                <p class="text-2xl md:text-3xl font-black text-minjoo">1,461일</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Greeting Section -->
+    <section class="py-16 md:py-20 bg-blue-50">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <div class="inline-block minjoo-blue text-white text-xs font-bold px-4 py-1 rounded-full mb-8 tracking-widest uppercase">인사말</div>
+            <div class="text-gray-800 text-lg md:text-2xl leading-relaxed font-medium space-y-6">
+                <p>지난 4년 동안 시민의 눈높이에서 배우며<br>현장에서 답을 찾기 위해 노력해 왔습니다.</p>
+                <div class="w-12 h-0.5 bg-yellow-400 mx-auto"></div>
+                <p>많이 부족했던 초선의 시간이었지만,<br>이제는 그 경험을 바탕으로<br>재선 시의원으로서 더 책임 있게 일하겠습니다.</p>
+                <div class="w-12 h-0.5 bg-yellow-400 mx-auto"></div>
+                <p>앞으로도 시민의 눈높이에서<br>함께 나아가겠습니다.</p>
+            </div>
+            <p class="mt-10 text-lg font-black text-minjoo">세종특별자치시의원 유인호</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 max-w-5xl mx-auto px-4 text-center">
+
+        <!-- 헤드라인 -->
+        <h2 class="handwriting mb-10 md:mb-12 leading-snug px-2" style="font-size: clamp(1.7rem, 5vw, 3.2rem);">"보람동에 변화를 만든 사람, 유인호 입니다."</h2>
+
+        <!-- 이름 + 사진 블록 -->
+        <div class="mb-10 md:mb-12 pb-8 md:pb-10 border-b border-gray-200 flex flex-col items-center">
+            <!-- 사진 -->
+            <div class="relative w-52 h-64 md:w-64 md:h-80 rounded-2xl overflow-hidden shadow-xl mb-6 md:mb-8">
+                <img src="photo3.jpg" alt="유인호 의원" class="w-full h-full object-cover object-top">
+                <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent 50%, rgba(0,42,110,0.18) 100%);"></div>
+            </div>
+            <!-- 텍스트 -->
+            <p class="text-4xl md:text-5xl font-black text-minjoo tracking-[0.3em] mb-3 md:mb-4">유 인 호</p>
+            <p class="text-base md:text-lg font-bold text-gray-700 mb-1">제4대 세종특별자치시의원 제13선거구(보람동)</p>
+            <p class="text-sm md:text-base text-gray-500 font-semibold">더불어민주당</p>
+        </div>
+
+        <!-- 주요경력 -->
+        <div class="mb-8 md:mb-10">
+            <p class="text-xs font-bold text-gray-400 tracking-widest uppercase mb-5">주요경력</p>
+            <div class="space-y-3 md:space-y-4 text-gray-700 inline-flex flex-col items-center w-full">
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-minjoo font-bold text-sm w-7 md:w-8 shrink-0 text-right">현</span>
+                    <span class="text-sm md:text-base text-left">제4대 세종특별자치시의회 의원</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-minjoo font-bold text-sm w-7 md:w-8 shrink-0 text-right">현</span>
+                    <span class="text-sm md:text-base text-left">제4대 세종특별자치시의회 후반기 예산결산특별위원회 위원</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-gray-400 font-bold text-sm w-7 md:w-8 shrink-0 text-right">전</span>
+                    <span class="text-sm md:text-base text-left">제4대 세종특별자치시의회 전반기 의회운영위원회 위원장</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-gray-400 font-bold text-sm w-7 md:w-8 shrink-0 text-right">전</span>
+                    <span class="text-sm md:text-base text-left">제4대 세종특별자치시의회 전반기 행정복지위원회 부위원장</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-minjoo font-bold text-sm w-7 md:w-8 shrink-0 text-right">현</span>
+                    <span class="text-sm md:text-base text-left">더불어민주당 세종시당 사회적경제위원회 위원장</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-gray-400 font-bold text-sm w-7 md:w-8 shrink-0 text-right">전</span>
+                    <span class="text-sm md:text-base text-left">더불어민주당 세종시당 민생경제회복 특별위원장</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-gray-400 font-bold text-sm w-7 md:w-8 shrink-0 text-right">전</span>
+                    <span class="text-sm md:text-base text-left">세종시 주민자치연합회장</span>
+                </div>
+                <div class="flex gap-3 md:gap-4">
+                    <span class="text-gray-400 font-bold text-sm w-7 md:w-8 shrink-0 text-right">전</span>
+                    <span class="text-sm md:text-base text-left">보람동 주민자치위원장</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 학력 -->
+        <div class="pb-10 border-b border-gray-200">
+            <p class="text-xs font-bold text-gray-400 tracking-widest uppercase mb-5">학력</p>
+            <div class="flex gap-4 justify-center text-gray-700">
+                <span class="text-sm md:text-base">공주대학교 정책융합전문대학원 석사</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Promises -->
+    <section id="promises" class="py-16 md:py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10 md:mb-16">
+            <h3 class="text-blue-900 font-bold mb-2">PROMISES</h3>
+            <h2 class="text-3xl md:text-4xl font-black">유인호의 5대 약속</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="group p-6 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2">
+                <div class="w-14 h-14 minjoo-blue rounded-2xl flex items-center justify-center text-white text-2xl mb-5 md:mb-6 shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-child"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">아이 키우기 좋은 세종</h4>
+                <p class="text-gray-600 leading-relaxed">보육 시설 확충 및 교육 환경 개선으로 부모와 아이가 모두 행복한 도시</p>
+            </div>
+            <div class="group p-6 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2">
+                <div class="w-14 h-14 minjoo-blue rounded-2xl flex items-center justify-center text-white text-2xl mb-5 md:mb-6 shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-bus"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">사통팔달 교통망 완성</h4>
+                <p class="text-gray-600 leading-relaxed">대중교통 체계 전면 개편 및 주차난 해결로 쾌적한 출퇴근길 보장</p>
+            </div>
+            <div class="group p-6 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2">
+                <div class="w-14 h-14 minjoo-blue rounded-2xl flex items-center justify-center text-white text-2xl mb-5 md:mb-6 shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">민생 경제 활성화</h4>
+                <p class="text-gray-600 leading-relaxed">소상공인 지원 확대 및 지역 화폐 활성화를 통한 골목 상권 회복</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section id="support" class="py-16 md:py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="minjoo-blue p-8 md:p-12 text-white md:w-1/2">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">희망을 후원해주세요</h3>
+                    <p class="opacity-80 mb-6 text-sm md:text-base">여러분의 소중한 후원이<br>세종의 더 나은 내일을 만듭니다.</p>
+                    <div class="text-sm border-t border-white/20 pt-6 space-y-2">
+                        <p>개인 1인당 연간 500만원까지</p>
+                        <p>10만원까지 전액 세액공제</p>
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                    <p class="text-gray-500 mb-2 font-bold uppercase tracking-widest text-xs">후원계좌 안내</p>
+                    <p class="text-xl md:text-2xl font-black text-gray-800 mb-2">농협은행</p>
+                    <p class="text-2xl md:text-3xl font-black text-minjoo mb-4 md:mb-6 tracking-tighter">000-000000-00-000</p>
+                    <p class="text-sm text-gray-500">예금주: 세종시의원유인호후원회</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 md:py-12 bg-white text-center border-t border-gray-100">
+        <div class="flex justify-center space-x-6 mb-6 md:mb-8">
+            <a href="https://www.instagram.com/inno_sori/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-minjoo hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/inho.ryu.18" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-minjoo hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <p class="text-sm text-gray-400">&copy; 2026 유인호 의원실. All Rights Reserved.</p>
+    </footer>
+
+<script>
+    if (history.scrollRestoration) history.scrollRestoration = 'manual';
+    window.addEventListener('load', () => window.scrollTo(0, 0));
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    function closeMobileMenu() {
+        mobileMenu.classList.add('hidden');
+    }
+</script>
+</body>
+</html>
