@@ -16,6 +16,21 @@
         .honest-font { font-family: 'Noto Sans KR', sans-serif; font-weight: 700; }
         .handwriting { font-family: 'Nanum Pen Script', cursive; }
 
+        @keyframes fadeSlideUp {
+            from { opacity: 0; transform: translate3d(0, 20px, 0); }
+            to   { opacity: 1; transform: translate3d(0, 0, 0); }
+        }
+        .hero-line {
+            opacity: 0;
+            will-change: opacity, transform;
+            -webkit-animation: fadeSlideUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation: fadeSlideUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        .hero-line:nth-child(1) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+        .hero-line:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+        .hero-line:nth-child(3) { -webkit-animation-delay: 0.8s; animation-delay: 0.8s; }
+        .hero-line:nth-child(4) { -webkit-animation-delay: 0.8s; animation-delay: 0.8s; }
+
         @media (max-width: 767px) {
             .hero-indent { margin-left: 1rem !important; }
             .hero-bg { background-size: cover !important; background-position: center top !important; }
@@ -72,17 +87,18 @@
                     검증된 경험, 준비된 재선!
                 </div>
                 <!-- 모바일 전용 -->
-                <div class="md:hidden font-black text-white mb-8" style="font-size: clamp(2.6rem, 11vw, 3.5rem); line-height: 1.22; word-break: keep-all; text-shadow: 0 2px 12px rgba(0,0,0,0.45);">
-                    <span class="block">"오늘보다 더</span>
-                    <span class="block">보람찬 <span class="text-yellow-400">보람동,</span></span>
-                    <span class="block text-right"><span class="text-yellow-400">유인호</span>가</span>
-                    <span class="block text-right">이어갑니다."</span>
+                <div class="md:hidden font-black text-white mb-8" style="font-size: clamp(2.3rem, 10vw, 3rem); line-height: 1.25; word-break: keep-all; text-shadow: 0 2px 12px rgba(0,0,0,0.45);">
+                    <span class="block hero-line">"오늘보다 더</span>
+                    <span class="block hero-line">보람찬 <span class="text-yellow-400">보람동,</span></span>
+                    <span class="block hero-line mt-1" style="padding-left: 4.3em;"><span class="text-yellow-400">유인호</span>가</span>
+                    <span class="block hero-line" style="padding-left: 3.8em;">이어갑니다."</span>
                 </div>
                 <!-- 데스크탑 전용 -->
-                <h1 class="hidden md:block font-black leading-tight mb-10" style="font-size: clamp(2rem, 6vw, 4.8rem); line-height: 1.18; word-break: keep-all;">
-                    "오늘보다 더<br>
-                    보람찬 <span class="text-yellow-400">보람동,</span><br>
-                    <span class="hero-indent" style="display: inline-block; margin-left: 7rem;"><span class="text-yellow-400">유인호</span>가 이어갑니다."</span>
+                <h1 class="hidden md:block font-black mb-10" style="font-size: clamp(2.8rem, 5.5vw, 4.5rem); line-height: 1.25; word-break: keep-all;">
+                    <span class="block hero-line">"오늘보다 더</span>
+                    <span class="block hero-line">보람찬 <span class="text-yellow-400">보람동,</span></span>
+                    <span class="block hero-line mt-1" style="padding-left: 4.3em;"><span class="text-yellow-400">유인호</span>가</span>
+                    <span class="block hero-line" style="padding-left: 3.8em;">이어갑니다."</span>
                 </h1>
             </div>
         </div>
@@ -294,6 +310,13 @@
         </div>
     </section>
 
+    <!-- Photo2 -->
+    <section id="photo2-section" class="w-full relative overflow-hidden">
+        <img id="photo2-img" src="photo2.jpg" alt="유인호" class="w-full block" style="transform: translateY(0); image-rendering: high-quality; -webkit-backface-visibility: hidden; backface-visibility: hidden;">
+        <div class="absolute inset-y-0 left-0 w-1/4" style="background: linear-gradient(to right, #f9fafb, transparent);"></div>
+        <div class="absolute inset-y-0 right-0 w-1/4" style="background: linear-gradient(to left, #f9fafb, transparent);"></div>
+    </section>
+
     <!-- Footer -->
     <footer class="py-10 md:py-12 bg-white text-center border-t border-gray-100">
         <div class="flex justify-center space-x-6 mb-6 md:mb-8">
@@ -312,6 +335,33 @@
     today.setHours(0, 0, 0, 0);
     const days = Math.floor((today - start) / (1000 * 60 * 60 * 24)) + 1;
     document.getElementById('activity-days').textContent = days.toLocaleString('ko-KR');
+
+    function replayHeroAnimation() {
+        const lines = document.querySelectorAll('.hero-line');
+        lines.forEach(el => {
+            el.style.animation = 'none';
+            el.style.opacity = '0';
+        });
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                lines.forEach(el => {
+                    el.style.animation = '';
+                });
+            });
+        });
+    }
+    setInterval(replayHeroAnimation, 6000);
+
+    const photo2Section = document.getElementById('photo2-section');
+    const photo2Img = document.getElementById('photo2-img');
+    function updateParallax() {
+        if (window.innerWidth < 768) return;
+        const rect = photo2Section.getBoundingClientRect();
+        const centerOffset = rect.top + rect.height / 2 - window.innerHeight / 2;
+        photo2Img.style.transform = `translateY(${Math.round(centerOffset * 0.15)}px)`;
+    }
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    updateParallax();
 
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
