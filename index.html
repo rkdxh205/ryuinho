@@ -17,7 +17,7 @@
         .handwriting { font-family: 'Nanum Pen Script', cursive; }
 
         @media (max-width: 767px) {
-            .hero-indent { margin-left: 2rem !important; }
+            .hero-indent { margin-left: 1rem !important; }
             .hero-bg { background-size: cover !important; background-position: center top !important; }
         }
     </style>
@@ -68,10 +68,10 @@
 
         <div class="relative max-w-7xl mx-auto px-4 w-full">
             <div class="text-white max-w-2xl">
-                <div class="inline-block bg-yellow-400 text-blue-900 px-4 md:px-5 py-1.5 md:py-2 rounded-full font-bold mb-6 md:mb-8 text-lg md:text-xl tracking-tight">
+                <div class="inline-block bg-yellow-400 text-blue-900 px-3 md:px-5 py-1.5 md:py-2 rounded-full font-bold mb-5 md:mb-8 text-sm md:text-xl tracking-tight">
                     검증된 경험, 준비된 재선!
                 </div>
-                <h1 class="font-black leading-tight mb-8 md:mb-10" style="font-size: clamp(2rem, 6vw, 4.8rem); line-height: 1.18; word-break: keep-all;">
+                <h1 class="font-black leading-tight mb-8 md:mb-10" style="font-size: clamp(1.5rem, 6vw, 4.8rem); line-height: 1.2; word-break: keep-all;">
                     "오늘보다 더<br>
                     보람찬 <span class="text-yellow-400">보람동,</span><br>
                     <span class="hero-indent" style="display: inline-block; margin-left: 7rem;"><span class="text-yellow-400">유인호</span>가<br class="md:hidden"> 이어갑니다."</span>
@@ -82,11 +82,11 @@
 
     <!-- Stat Section -->
     <section class="bg-white py-10 md:py-12 shadow-inner">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100 text-center">
-            <a href="https://council.sejong.go.kr/mmbr/billList.do" target="_blank" rel="noopener noreferrer" class="block hover:opacity-70 transition py-6 md:py-0 md:px-6">
-                <p class="text-gray-500 text-xs md:text-sm mb-1">조례안</p>
-                <p class="text-2xl md:text-3xl font-black text-minjoo mb-2">469건</p>
-                <div class="text-xs text-gray-400 space-y-0.5 mb-1">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-stretch text-center">
+            <a href="https://council.sejong.go.kr/mmbr/billList.do" target="_blank" rel="noopener noreferrer" class="flex-1 block hover:opacity-70 transition py-6 md:py-4 md:px-6 border-b-2 md:border-b-0 border-yellow-400">
+                <p class="text-gray-500 text-sm md:text-base mb-1">조례안</p>
+                <p class="text-3xl md:text-4xl font-black text-minjoo mb-2">총 469건</p>
+                <div class="text-sm text-gray-400 space-y-1 mb-1">
                     <p>공동발의 <span class="font-bold text-gray-600">413건</span></p>
                     <p>조례 제정안 <span class="font-bold text-gray-600">27건</span></p>
                     <p>일부개정조례안 <span class="font-bold text-gray-600">28건</span></p>
@@ -94,19 +94,27 @@
                 </div>
                 <p class="text-xs text-gray-400 mt-1">▶ 클릭하시면 발의 조례안을 확인하실 수 있습니다.</p>
             </a>
-            <a href="https://counciltv.sejong.go.kr/caster/player/player3.xdo?midx=1447" target="_blank" rel="noopener noreferrer" class="block hover:opacity-70 transition py-6 md:py-0 md:px-6">
-                <p class="text-gray-500 text-xs md:text-sm mb-1">5분발언</p>
-                <p class="text-2xl md:text-3xl font-black text-minjoo">21건</p>
+            <div class="hidden md:block w-px bg-yellow-400 self-stretch"></div>
+            <a href="https://counciltv.sejong.go.kr/caster/player/player3.xdo?midx=1447" target="_blank" rel="noopener noreferrer" class="flex-1 block hover:opacity-70 transition py-6 md:py-4 md:px-6 border-b-2 md:border-b-0 border-yellow-400">
+                <p class="text-gray-500 text-sm md:text-base mb-1">5분발언</p>
+                <p class="text-3xl md:text-4xl font-black text-minjoo">총 21건</p>
                 <p class="text-xs text-gray-400 mt-1">▶ 클릭하시면 영상으로 확인하실 수 있습니다.</p>
             </a>
-            <div class="py-6 md:py-0 md:px-6">
-                <p class="text-gray-500 text-xs md:text-sm mb-1">의정활동</p>
-                <p class="text-2xl md:text-3xl font-black text-minjoo mb-2"><span id="activity-days"></span>일</p>
-                <div class="text-xs text-gray-400 space-y-0.5">
+            <div class="hidden md:block w-px bg-yellow-400 self-stretch"></div>
+            <div class="flex-1 py-6 md:py-4 md:px-6">
+                <p class="text-gray-500 text-sm md:text-base mb-1">의정활동</p>
+                <p class="text-3xl md:text-4xl font-black text-minjoo mb-2"><span id="activity-days"></span>일</p>
+                <div class="text-sm text-gray-400 space-y-1 text-left inline-block">
+                    <p class="font-bold text-gray-500 mb-1 text-center">주요민원해결</p>
                     <p>✔ 보람동 중심상권 원형광장 조성</p>
                     <p>✔ 치유정원 맨발길 조성 및 개선</p>
                     <p>✔ 초등학교 주변 바닥신호등 설치</p>
                     <p>✔ 학원가 주변 자전거 거치대 설치</p>
+                    <div class="flex flex-col items-center leading-none mt-1 space-y-0.5 text-gray-300">
+                        <span>·</span>
+                        <span>·</span>
+                        <span>·</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,7 +139,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 md:py-24 max-w-5xl mx-auto px-4 text-center">
+    <section id="about" class="py-12 md:py-24 max-w-5xl mx-auto px-4 text-center">
 
         <!-- 헤드라인 -->
         <h2 class="handwriting mb-10 md:mb-12 leading-snug px-2" style="font-size: clamp(1.7rem, 5vw, 3.2rem);">"보람동에 변화를 만든 사람, 유인호 입니다."</h2>
@@ -146,7 +154,7 @@
             <!-- 텍스트 -->
             <p class="text-4xl md:text-5xl font-black text-minjoo tracking-[0.12em] mb-1">유인호</p>
             <p class="text-base md:text-lg text-gray-400 font-medium mb-3 md:mb-4">柳寅鎬</p>
-            <p class="text-base md:text-lg font-bold text-gray-700 mb-1">제4대 세종특별자치시의원 제13선거구(보람동)</p>
+            <p class="text-sm md:text-lg font-bold text-gray-700 mb-1 px-2">제4대 세종특별자치시의원 제13선거구(보람동)</p>
             <p class="text-sm md:text-base text-gray-500 font-semibold">더불어민주당</p>
         </div>
 
@@ -220,52 +228,58 @@
     </section>
 
     <!-- Promises -->
-    <section id="promises" class="py-16 md:py-24 max-w-7xl mx-auto px-4">
-        <div class="text-center mb-10 md:mb-16">
-            <h3 class="text-blue-900 font-bold mb-2">PROMISES</h3>
-            <h2 class="text-3xl md:text-4xl font-black">유인호의 5대 약속</h2>
+    <section id="promises" class="py-12 md:py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-8 md:mb-16">
+            <h3 class="text-blue-900 font-bold mb-2 text-sm md:text-base">PROMISES</h3>
+            <h2 class="text-2xl md:text-4xl font-black">유인호의 5대 약속</h2>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div class="group p-6 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2">
-                <div class="w-14 h-14 minjoo-blue rounded-2xl flex items-center justify-center text-white text-2xl mb-5 md:mb-6 shadow-lg shadow-blue-200">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+            <div class="group p-5 md:p-8 bg-white rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2 flex md:block items-center gap-4">
+                <div class="w-12 h-12 md:w-14 md:h-14 minjoo-blue rounded-xl md:rounded-2xl flex items-center justify-center text-white text-xl md:text-2xl shrink-0 md:mb-6 shadow-lg shadow-blue-200">
                     <i class="fa-solid fa-child"></i>
                 </div>
-                <h4 class="text-xl font-bold mb-3">아이 키우기 좋은 세종</h4>
-                <p class="text-gray-600 leading-relaxed">보육 시설 확충 및 교육 환경 개선으로 부모와 아이가 모두 행복한 도시</p>
+                <div>
+                    <h4 class="text-base md:text-xl font-bold mb-1 md:mb-3">아이 키우기 좋은 세종</h4>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">보육 시설 확충 및 교육 환경 개선으로 부모와 아이가 모두 행복한 도시</p>
+                </div>
             </div>
-            <div class="group p-6 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2">
-                <div class="w-14 h-14 minjoo-blue rounded-2xl flex items-center justify-center text-white text-2xl mb-5 md:mb-6 shadow-lg shadow-blue-200">
+            <div class="group p-5 md:p-8 bg-white rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2 flex md:block items-center gap-4">
+                <div class="w-12 h-12 md:w-14 md:h-14 minjoo-blue rounded-xl md:rounded-2xl flex items-center justify-center text-white text-xl md:text-2xl shrink-0 md:mb-6 shadow-lg shadow-blue-200">
                     <i class="fa-solid fa-bus"></i>
                 </div>
-                <h4 class="text-xl font-bold mb-3">사통팔달 교통망 완성</h4>
-                <p class="text-gray-600 leading-relaxed">대중교통 체계 전면 개편 및 주차난 해결로 쾌적한 출퇴근길 보장</p>
+                <div>
+                    <h4 class="text-base md:text-xl font-bold mb-1 md:mb-3">사통팔달 교통망 완성</h4>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">대중교통 체계 전면 개편 및 주차난 해결로 쾌적한 출퇴근길 보장</p>
+                </div>
             </div>
-            <div class="group p-6 md:p-8 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2">
-                <div class="w-14 h-14 minjoo-blue rounded-2xl flex items-center justify-center text-white text-2xl mb-5 md:mb-6 shadow-lg shadow-blue-200">
+            <div class="group p-5 md:p-8 bg-white rounded-2xl md:rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition hover:-translate-y-2 flex md:block items-center gap-4">
+                <div class="w-12 h-12 md:w-14 md:h-14 minjoo-blue rounded-xl md:rounded-2xl flex items-center justify-center text-white text-xl md:text-2xl shrink-0 md:mb-6 shadow-lg shadow-blue-200">
                     <i class="fa-solid fa-store"></i>
                 </div>
-                <h4 class="text-xl font-bold mb-3">민생 경제 활성화</h4>
-                <p class="text-gray-600 leading-relaxed">소상공인 지원 확대 및 지역 화폐 활성화를 통한 골목 상권 회복</p>
+                <div>
+                    <h4 class="text-base md:text-xl font-bold mb-1 md:mb-3">민생 경제 활성화</h4>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">소상공인 지원 확대 및 지역 화폐 활성화를 통한 골목 상권 회복</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Support -->
-    <section id="support" class="py-16 md:py-20 bg-gray-100">
+    <section id="support" class="py-12 md:py-20 bg-gray-100">
         <div class="max-w-4xl mx-auto px-4">
-            <div class="bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                <div class="minjoo-blue p-8 md:p-12 text-white md:w-1/2">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4">희망을 후원해주세요</h3>
-                    <p class="opacity-80 mb-6 text-sm md:text-base">여러분의 소중한 후원이<br>세종의 더 나은 내일을 만듭니다.</p>
-                    <div class="text-sm border-t border-white/20 pt-6 space-y-2">
+            <div class="bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="minjoo-blue p-6 md:p-12 text-white md:w-1/2">
+                    <h3 class="text-lg md:text-2xl font-bold mb-3 md:mb-4">희망을 후원해주세요</h3>
+                    <p class="opacity-80 mb-4 md:mb-6 text-sm md:text-base">여러분의 소중한 후원이<br>세종의 더 나은 내일을 만듭니다.</p>
+                    <div class="text-sm border-t border-white/20 pt-4 md:pt-6 space-y-2">
                         <p>개인 1인당 연간 500만원까지</p>
                         <p>10만원까지 전액 세액공제</p>
                     </div>
                 </div>
-                <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                <div class="p-6 md:p-12 md:w-1/2 flex flex-col justify-center">
                     <p class="text-gray-500 mb-2 font-bold uppercase tracking-widest text-xs">후원계좌 안내</p>
-                    <p class="text-xl md:text-2xl font-black text-gray-800 mb-2">농협은행</p>
-                    <p class="text-2xl md:text-3xl font-black text-minjoo mb-4 md:mb-6 tracking-tighter">000-000000-00-000</p>
+                    <p class="text-lg md:text-2xl font-black text-gray-800 mb-2">농협은행</p>
+                    <p class="text-xl md:text-3xl font-black text-minjoo mb-3 md:mb-6 tracking-tighter">000-000000-00-000</p>
                     <p class="text-sm text-gray-500">예금주: 세종시의원유인호후원회</p>
                 </div>
             </div>
