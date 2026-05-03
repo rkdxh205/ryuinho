@@ -71,10 +71,18 @@
                 <div class="inline-block bg-yellow-400 text-blue-900 px-3 md:px-5 py-1.5 md:py-2 rounded-full font-bold mb-5 md:mb-8 text-sm md:text-xl tracking-tight">
                     검증된 경험, 준비된 재선!
                 </div>
-                <h1 class="font-black leading-tight mb-8 md:mb-10" style="font-size: clamp(1.5rem, 6vw, 4.8rem); line-height: 1.2; word-break: keep-all;">
+                <!-- 모바일 전용 -->
+                <div class="md:hidden font-black text-white mb-8" style="font-size: clamp(2.2rem, 9.5vw, 3rem); line-height: 1.15; word-break: keep-all;">
+                    <span class="block">"오늘보다 더</span>
+                    <span class="block">보람찬</span>
+                    <span class="block text-right"><span class="text-yellow-400">보람동,</span></span>
+                    <span class="block" style="padding-left: 1.8rem;"><span class="text-yellow-400">유인호</span>가 이어갑니다."</span>
+                </div>
+                <!-- 데스크탑 전용 -->
+                <h1 class="hidden md:block font-black leading-tight mb-10" style="font-size: clamp(2rem, 6vw, 4.8rem); line-height: 1.18; word-break: keep-all;">
                     "오늘보다 더<br>
                     보람찬 <span class="text-yellow-400">보람동,</span><br>
-                    <span class="hero-indent" style="display: inline-block; margin-left: 7rem;"><span class="text-yellow-400">유인호</span>가<br class="md:hidden"> 이어갑니다."</span>
+                    <span class="hero-indent" style="display: inline-block; margin-left: 7rem;"><span class="text-yellow-400">유인호</span>가 이어갑니다."</span>
                 </h1>
             </div>
         </div>
