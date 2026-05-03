@@ -110,40 +110,104 @@
     <!-- Stat Section -->
     <section class="bg-white py-10 md:py-12 shadow-inner">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-stretch text-center">
-            <a href="https://council.sejong.go.kr/mmbr/billList.do" target="_blank" rel="noopener noreferrer" class="flex-1 block hover:opacity-70 transition py-6 md:py-4 md:px-6 border-b-2 md:border-b-0 border-yellow-400">
+            <a href="https://council.sejong.go.kr/mmbr/billList.do" target="_blank" rel="noopener noreferrer" class="flex-1 flex flex-col py-6 md:py-4 md:px-6 border-b-2 md:border-b-0 border-yellow-400 hover:bg-blue-50 active:scale-95 transition-all duration-150 cursor-pointer text-center">
                 <p class="text-gray-500 text-sm md:text-base mb-1">조례안</p>
-                <p class="text-3xl md:text-4xl font-black text-minjoo mb-2">총 469건</p>
-                <div class="text-sm text-gray-400 space-y-1 mb-1">
-                    <p>공동발의 <span class="font-bold text-gray-600">413건</span></p>
-                    <p>조례 제정안 <span class="font-bold text-gray-600">27건</span></p>
-                    <p>일부개정조례안 <span class="font-bold text-gray-600">28건</span></p>
-                    <p>전부개정조례안 <span class="font-bold text-gray-600">1건</span></p>
-                </div>
-                <p class="text-xs text-gray-400 mt-1">▶ 클릭하시면 발의 조례안을 확인하실 수 있습니다.</p>
-            </a>
-            <div class="hidden md:block w-px bg-yellow-400 self-stretch"></div>
-            <a href="https://counciltv.sejong.go.kr/caster/player/player3.xdo?midx=1447" target="_blank" rel="noopener noreferrer" class="flex-1 block hover:opacity-70 transition py-6 md:py-4 md:px-6 border-b-2 md:border-b-0 border-yellow-400">
-                <p class="text-gray-500 text-sm md:text-base mb-1">5분발언</p>
-                <p class="text-3xl md:text-4xl font-black text-minjoo">총 21건</p>
-                <p class="text-xs text-gray-400 mt-1">▶ 클릭하시면 영상으로 확인하실 수 있습니다.</p>
-            </a>
-            <div class="hidden md:block w-px bg-yellow-400 self-stretch"></div>
-            <div class="flex-1 py-6 md:py-4 md:px-6">
-                <p class="text-gray-500 text-sm md:text-base mb-1">의정활동</p>
-                <p class="text-3xl md:text-4xl font-black text-minjoo mb-2"><span id="activity-days"></span>일</p>
-                <div class="text-sm text-gray-400 space-y-1 text-left inline-block">
-                    <p class="font-bold text-gray-500 mb-1 text-center">주요민원해결</p>
-                    <p>✔ 보람동 중심상권 원형광장 조성</p>
-                    <p>✔ 치유정원 맨발길 조성 및 개선</p>
-                    <p>✔ 초등학교 주변 바닥신호등 설치</p>
-                    <p>✔ 학원가 주변 자전거 거치대 설치</p>
+                <p class="text-3xl md:text-4xl font-black text-minjoo mb-3">총 469건</p>
+                <div class="text-left mt-1 space-y-2 flex-1">
+                    <p class="text-sm font-bold text-gray-400 tracking-widest mb-2 text-center">세부 내역</p>
+                    <div class="flex items-center gap-2 px-2 py-1">
+                        <span class="text-sm text-gray-400 shrink-0">공동 발의</span>
+                        <span class="flex-1 border-b border-dashed border-gray-200"></span>
+                        <span class="text-sm text-minjoo font-bold">413건</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-2 py-1">
+                        <span class="text-sm text-gray-400 shrink-0">조례 제정안</span>
+                        <span class="flex-1 border-b border-dashed border-gray-200"></span>
+                        <span class="text-sm text-minjoo font-bold">27건</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-2 py-1">
+                        <span class="text-sm text-gray-400 shrink-0">일부 개정 조례안</span>
+                        <span class="flex-1 border-b border-dashed border-gray-200"></span>
+                        <span class="text-sm text-minjoo font-bold">28건</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-2 py-1">
+                        <span class="text-sm text-gray-400 shrink-0">전부 개정 조례안</span>
+                        <span class="flex-1 border-b border-dashed border-gray-200"></span>
+                        <span class="text-sm text-minjoo font-bold">1건</span>
+                    </div>
                     <div class="flex flex-col items-center leading-none mt-1 space-y-0.5 text-gray-300">
                         <span>·</span>
                         <span>·</span>
                         <span>·</span>
                     </div>
                 </div>
+                <p class="text-sm text-gray-400 mt-4">▶ 클릭하여 발의 조례안 확인하기</p>
+            </a>
+            <div class="hidden md:block w-0.5 bg-yellow-400 self-stretch"></div>
+            <div class="flex-1 flex flex-col py-6 md:py-4 md:px-6 text-center border-b-2 md:border-b-0 border-yellow-400">
+                <p class="text-gray-500 text-sm md:text-base mb-1">의정 활동</p>
+                <p class="text-3xl md:text-4xl font-black text-minjoo mb-3"><span id="activity-days"></span>일<span style="font-size: 0.6em; font-weight: 700;" class="text-minjoo">째</span></p>
+                <div class="mt-1 flex-1 flex flex-col items-center">
+                    <p class="text-sm font-bold text-gray-400 tracking-widest mb-2 text-center">주요 민원 해결</p>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-2 px-2 py-1">
+                            <span class="text-sm text-yellow-500 shrink-0 mt-0.5">✔</span>
+                            <span class="text-sm text-minjoo font-bold leading-snug">보람동 중심상권 원형광장 조성</span>
+                        </div>
+                        <div class="flex items-start gap-2 px-2 py-1">
+                            <span class="text-sm text-yellow-500 shrink-0 mt-0.5">✔</span>
+                            <span class="text-sm text-minjoo font-bold leading-snug">치유정원 맨발길 조성 및 개선</span>
+                        </div>
+                        <div class="flex items-start gap-2 px-2 py-1">
+                            <span class="text-sm text-yellow-500 shrink-0 mt-0.5">✔</span>
+                            <span class="text-sm text-minjoo font-bold leading-snug">초등학교 주변 바닥신호등 설치</span>
+                        </div>
+                        <div class="flex items-start gap-2 px-2 py-1">
+                            <span class="text-sm text-yellow-500 shrink-0 mt-0.5">✔</span>
+                            <span class="text-sm text-minjoo font-bold leading-snug">학원가 주변 자전거 거치대 설치</span>
+                        </div>
+                        <div class="flex flex-col items-center leading-none mt-1 space-y-0.5 text-gray-300">
+                            <span>·</span>
+                            <span>·</span>
+                            <span>·</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="hidden md:block w-0.5 bg-yellow-400 self-stretch"></div>
+            <a href="https://counciltv.sejong.go.kr/caster/player/player3.xdo?midx=1447" target="_blank" rel="noopener noreferrer" class="flex-1 flex flex-col py-6 md:py-4 md:px-6 border-b-2 md:border-b-0 border-yellow-400 hover:bg-blue-50 active:scale-95 transition-all duration-150 cursor-pointer text-center">
+                <p class="text-gray-500 text-sm md:text-base mb-1">5분 발언</p>
+                <p class="text-3xl md:text-4xl font-black text-minjoo mb-3">총 21건</p>
+                <div class="text-left mt-1 space-y-2 flex-1">
+                    <p class="text-sm font-bold text-gray-400 tracking-widest mb-2 text-center">최근 발언내역</p>
+                    <div class="flex items-start gap-2 px-2 py-1">
+                        <span class="text-xs text-gray-400 shrink-0 mt-0.5">2026.03.23</span>
+                        <span class="text-xs text-minjoo font-bold leading-snug">시청광장, 정원이 아니라 시민의 광장이어야 합니다.</span>
+                    </div>
+                    <div class="flex items-start gap-2 px-2 py-1">
+                        <span class="text-xs text-gray-400 shrink-0 mt-0.5">2026.02.06</span>
+                        <span class="text-xs text-minjoo font-bold leading-snug">인사청문회는 이벤트가 아닙니다.</span>
+                    </div>
+                    <div class="flex items-start gap-2 px-2 py-1">
+                        <span class="text-xs text-gray-400 shrink-0 mt-0.5">2025.12.15</span>
+                        <span class="text-xs text-minjoo font-bold leading-snug">세종공동캠퍼스의 안정적 운영과 미래 대비를 위한 제언</span>
+                    </div>
+                    <div class="flex items-start gap-2 px-2 py-1">
+                        <span class="text-xs text-gray-400 shrink-0 mt-0.5">2025.11.25</span>
+                        <span class="text-xs text-minjoo font-bold leading-snug">「후퇴하는 시민주권정책, 시민특별자치시의 근간 붕괴」</span>
+                    </div>
+                    <div class="flex items-start gap-2 px-2 py-1">
+                        <span class="text-xs text-gray-400 shrink-0 mt-0.5">2025.11.11</span>
+                        <span class="text-xs text-minjoo font-bold leading-snug">전시행정(展示行政)</span>
+                    </div>
+                    <div class="flex flex-col items-center leading-none mt-1 space-y-0.5 text-gray-300">
+                        <span>·</span>
+                        <span>·</span>
+                        <span>·</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 mt-4">▶ 클릭하여 5분 발언 확인하기</p>
+            </a>
         </div>
     </section>
 
