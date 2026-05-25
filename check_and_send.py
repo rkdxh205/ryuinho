@@ -1,6 +1,7 @@
 import re
 import html
 import os
+import json
 from email.utils import parsedate_to_datetime
 
 import requests
@@ -8,14 +9,30 @@ import requests
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
 NAVER_CLIENT_SECRET = os.environ["NAVER_CLIENT_SECRET"]
-CHAT_IDS = [cid.strip() for cid in os.environ["CHAT_IDS"].split(",") if cid.strip()]
 
 SEEN_FILE = "seen_urls.txt"
+SUBSCRIBERS_FILE = "subscribers.json"
 TARGET_NAME = "유인호"
 REQUIRED_KEYWORDS = ["세종", "세종시", "세종특별자치시", "세종시의원", "세종특별자치시의원", "세종시의회", "세종후보", "세종특별자치시후보", "세종 후보"]
 EXCLUDE_CONTEXTS = ["배우", "가수", "감독", "작가", "교수", "부산", "대구", "인천", "광주", "대전", "울산", "수원", "성남", "고양"]
 
+TGAPI = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
+
+# ── 구독자 관리 ───────────────────────────
+def load_subscribers() -> dict:
+    if os.path.exists(SUBSCRIBERS_FILE):
+        with open(SUBSCRIBERS_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    return {"chat_ids": [], "offset": 0}
+
+
+def save_subscribers(data: dict):
+    with open(SUBSCRIBERS_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+# ── seen_urls 관리 ───────────────────────
 def load_seen() -> set[str]:
     if not os.path.exists(SEEN_FILE):
         return set()
@@ -28,13 +45,81 @@ def save_seen(seen: set[str]):
         f.write("\n".join(sorted(seen)))
 
 
+# ── 텔레그램 ─────────────────────────────
+def tg_get(method: str, **params):
+    r = requests.get(f"{TGAPI}/{method}", params=params, timeout=15)
+    r.raise_for_status()
+    return r.json()
+
+
+def send_message(chat_id, text: str):
+    requests.post(f"{TGAPI}/sendMessage", json={
+        "chat_id": chat_id,
+        "text": text,
+        "disable_web_page_preview": False,
+    }, timeout=15)
+
+
+# ── 커맨드 처리 ──────────────────────────
+def process_updates(data: dict):
+    offset = data.get("offset", 0)
+    chat_ids: list = data.get("chat_ids", [])
+
+    resp = tg_get("getUpdates", offset=offset, timeout=10)
+    updates = resp.get("result", [])
+
+    for upd in updates:
+        offset = upd["update_id"] + 1
+        msg = upd.get("message", {})
+        text = msg.get("text", "").strip()
+        chat_id = msg.get("chat", {}).get("id")
+        if not chat_id:
+            continue
+
+        if text == "/start":
+            send_message(chat_id,
+                "안녕하세요! 👋\n"
+                "유인호 세종특별자치시의원·후보 뉴스 알림 봇입니다.\n\n"
+                "📋 명령어\n"
+                "/subscribe  — 뉴스 알림 구독\n"
+                "/unsubscribe — 구독 취소\n"
+                "/status    — 구독 상태 확인"
+            )
+
+        elif text == "/subscribe":
+            if chat_id not in chat_ids:
+                chat_ids.append(chat_id)
+                send_message(chat_id,
+                    "구독 완료! ✅\n"
+                    "유인호 세종특별자치시의원·후보 관련 새 뉴스가 등록되면 바로 알려드립니다.\n"
+                    "(동명이인 기사는 자동으로 제외됩니다)"
+                )
+            else:
+                send_message(chat_id, "이미 구독 중입니다. ✅")
+
+        elif text == "/unsubscribe":
+            if chat_id in chat_ids:
+                chat_ids.remove(chat_id)
+                send_message(chat_id, "구독이 취소되었습니다.")
+            else:
+                send_message(chat_id, "현재 구독 중이 아닙니다.")
+
+        elif text == "/status":
+            status = "구독 중 ✅" if chat_id in chat_ids else "미구독 ❌"
+            send_message(chat_id, f"상태: {status}\n전체 구독자: {len(chat_ids)}명")
+
+    data["offset"] = offset
+    data["chat_ids"] = chat_ids
+    return data
+
+
+# ── 뉴스 수집 ────────────────────────────
 def is_target_person(text: str) -> bool:
     if TARGET_NAME not in text:
         return False
     if not any(kw in text for kw in REQUIRED_KEYWORDS):
         return False
-    has_exclude = any(kw in text for kw in EXCLUDE_CONTEXTS)
-    if has_exclude and not any(kw in text for kw in ["세종", "세종시"]):
+    if any(kw in text for kw in EXCLUDE_CONTEXTS) and not any(kw in text for kw in ["세종", "세종시"]):
         return False
     return True
 
@@ -45,9 +130,8 @@ def fetch_naver_news() -> list[dict]:
         "X-Naver-Client-Id": NAVER_CLIENT_ID,
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
     }
-    queries = ["유인호 세종특별자치시의원", "유인호 세종 후보"]
     seen_urls: set[str] = set()
-    for query in queries:
+    for query in ["유인호 세종특별자치시의원", "유인호 세종 후보"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
         resp = requests.get(url, headers=headers, timeout=15)
         resp.raise_for_status()
@@ -56,22 +140,13 @@ def fetch_naver_news() -> list[dict]:
             link = item.get("link") or item.get("originallink", "")
             desc = html.unescape(re.sub(r"<[^>]+>", "", item.get("description", "")))
             try:
-                pub_dt = parsedate_to_datetime(item.get("pubDate", ""))
-                date_str = pub_dt.strftime("%Y년 %m월 %d일 %H:%M")
+                date_str = parsedate_to_datetime(item.get("pubDate", "")).strftime("%Y년 %m월 %d일 %H:%M")
             except Exception:
                 date_str = "날짜 미상"
             if link not in seen_urls and is_target_person(title + " " + desc):
                 seen_urls.add(link)
                 articles.append({"title": title, "url": link, "summary": desc, "date": date_str})
     return articles
-
-
-def send_message(chat_id: str, text: str):
-    requests.post(
-        f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        json={"chat_id": chat_id, "text": text, "disable_web_page_preview": False},
-        timeout=15,
-    )
 
 
 def format_article(article: dict) -> str:
@@ -86,19 +161,27 @@ def format_article(article: dict) -> str:
     )
 
 
+# ── 메인 ─────────────────────────────────
 def main():
+    # 1. 구독자 로드 & 커맨드 처리
+    data = load_subscribers()
+    data = process_updates(data)
+    chat_ids = data["chat_ids"]
+    save_subscribers(data)
+    print(f"구독자 {len(chat_ids)}명")
+
+    # 2. 뉴스 수집
     seen = load_seen()
     articles = fetch_naver_news()
-
     new_articles = [a for a in articles if a["url"] not in seen]
-    print(f"전체 {len(articles)}건 / 새 기사 {len(new_articles)}건")
+    print(f"새 기사 {len(new_articles)}건")
 
+    # 3. 새 기사 전송
     for article in new_articles:
         seen.add(article["url"])
-        msg = format_article(article)
-        for chat_id in CHAT_IDS:
-            send_message(chat_id, msg)
-            print(f"전송: {article['title'][:50]}")
+        for chat_id in chat_ids:
+            send_message(chat_id, format_article(article))
+            print(f"  전송 → {chat_id}: {article['title'][:40]}")
 
     save_seen(seen)
 

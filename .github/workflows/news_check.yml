@@ -27,10 +27,10 @@ jobs:
           CHAT_IDS: ${{ secrets.CHAT_IDS }}
         run: python check_and_send.py
 
-      - name: seen_urls.txt 커밋
+      - name: 변경사항 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen_urls.txt
-          git diff --cached --quiet || git commit -m "Update seen_urls"
+          git add seen_urls.txt subscribers.json
+          git diff --cached --quiet || git commit -m "Update seen_urls & subscribers"
           git push
