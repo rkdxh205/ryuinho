@@ -3,3 +3,4 @@ subscribers.db
 __pycache__/
 *.pyc
 test_send.py
+.claude/
