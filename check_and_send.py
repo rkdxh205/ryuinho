@@ -194,11 +194,17 @@ def main():
     print(f"새 기사 {len(new_articles)}건")
 
     # 3. 새 기사 전송
-    for article in new_articles:
-        seen.add(article["url"])
+    if not new_articles:
+        now_kst = datetime.now(KST).strftime("%Y년 %m월 %d일 %H:%M")
         for chat_id in chat_ids:
-            send_message(chat_id, format_article(article))
-            print(f"  전송 → {chat_id}: {article['title'][:40]}")
+            send_message(chat_id, f"📭 {now_kst} 기준\n현재까지 최신기사는 없습니다.")
+        print("새 기사 없음 메시지 전송")
+    else:
+        for article in new_articles:
+            seen.add(article["url"])
+            for chat_id in chat_ids:
+                send_message(chat_id, format_article(article))
+                print(f"  전송 → {chat_id}: {article['title'][:40]}")
 
     save_seen(seen)
 
