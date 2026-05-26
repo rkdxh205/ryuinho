@@ -9,7 +9,7 @@ from urllib.parse import urlparse, urlunparse
 import requests
 
 KST = timezone(timedelta(hours=9))
-RECENT_HOURS = 14  # 오후6시 → 다음날 오전8시 최대 간격
+RECENT_HOURS = 15  # 오후6시 → 다음날 오전8시(14h) + Actions 지연 여유 1h
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
@@ -141,29 +141,37 @@ def fetch_naver_news() -> list[dict]:
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
     }
     cutoff = datetime.now(timezone.utc) - timedelta(hours=RECENT_HOURS)
-    seen_keys: set[str] = set()
+    seen_keys: set[str] = set()  # 이번 수집 내 중복 방지용
     for query in ["유인호 세종특별자치시의원", "유인호 세종 후보"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
         resp = requests.get(url, headers=headers, timeout=15)
         resp.raise_for_status()
         for item in resp.json().get("items", []):
             title = html.unescape(re.sub(r"<[^>]+>", "", item.get("title", "")))
-            link = item.get("link") or item.get("originallink", "")
-            norm = normalize_url(link)
+            link = normalize_url(item.get("link", ""))
+            orig = normalize_url(item.get("originallink", ""))
             desc = html.unescape(re.sub(r"<[^>]+>", "", item.get("description", "")))
+
+            # 날짜 파싱 실패 기사는 시간 필터 불가하므로 제외
             try:
                 pub_dt = parsedate_to_datetime(item.get("pubDate", ""))
                 date_str = pub_dt.strftime("%Y년 %m월 %d일 %H:%M")
             except Exception:
-                pub_dt = None
-                date_str = "날짜 미상"
-            # 최근 14시간 이내 기사만 허용
-            if pub_dt and pub_dt < cutoff:
                 continue
-            if norm not in seen_keys and title not in seen_keys and is_target_person(title + " " + desc):
-                seen_keys.add(norm)
-                seen_keys.add(title)
-                articles.append({"title": title, "url": norm, "summary": desc, "date": date_str})
+
+            # 최근 15시간 이내 기사만 허용
+            if pub_dt < cutoff:
+                continue
+
+            # URL 기준 이번 수집 내 중복 제거 (link + originallink 모두 체크)
+            if link in seen_keys or orig in seen_keys:
+                continue
+            if not is_target_person(title + " " + desc):
+                continue
+
+            seen_keys.add(link)
+            seen_keys.add(orig)
+            articles.append({"title": title, "url": link or orig, "orig": orig, "summary": desc, "date": date_str})
     return articles
 
 
@@ -188,11 +196,15 @@ def main():
     save_subscribers(data)
     print(f"구독자 {len(chat_ids)}명")
 
-    # 2. 뉴스 수집 (최근 13시간 이내)
+    # 2. 뉴스 수집 (최근 15시간 이내)
     seen = load_seen()
     articles = fetch_naver_news()
-    new_articles = [a for a in articles if a["url"] not in seen][:10]  # 최신순 최대 10건
-    print(f"새 기사 {len(new_articles)}건")
+    # link·originallink 둘 중 하나라도 seen에 있으면 이미 보낸 기사
+    new_articles = [
+        a for a in articles
+        if a["url"] not in seen and a.get("orig", "") not in seen
+    ][:10]
+    print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
 
     # 3. 새 기사 전송
     if not new_articles:
@@ -202,7 +214,10 @@ def main():
         print("새 기사 없음 메시지 전송")
     else:
         for article in new_articles:
+            # link·originallink 모두 seen에 등록해 다음 실행에서 중복 차단
             seen.add(article["url"])
+            if article.get("orig"):
+                seen.add(article["orig"])
             for chat_id in chat_ids:
                 send_message(chat_id, format_article(article))
                 print(f"  전송 → {chat_id}: {article['title'][:40]}")
