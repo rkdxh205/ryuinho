@@ -2,7 +2,8 @@ name: 유인호 뉴스 체크
 
 on:
   schedule:
-    - cron: '*/5 * * * *'    # 5분마다 실행
+    - cron: '0 23 * * *'    # 매일 오전 8시 KST (UTC 23:00)
+    - cron: '0 9 * * *'     # 매일 오후 6시 KST (UTC 09:00)
   workflow_dispatch:           # 수동 실행 버튼
 
 jobs:
@@ -24,7 +25,6 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          CHAT_IDS: ${{ secrets.CHAT_IDS }}
         run: python check_and_send.py
 
       - name: 변경사항 커밋

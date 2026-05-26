@@ -2,10 +2,13 @@ import re
 import html
 import os
 import json
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse, urlunparse
 
 import requests
+
+RECENT_HOURS = 13  # 오전8시↔오후6시 간격(10h) + 여유
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
@@ -136,7 +139,8 @@ def fetch_naver_news() -> list[dict]:
         "X-Naver-Client-Id": NAVER_CLIENT_ID,
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
     }
-    seen_keys: set[str] = set()  # 정규화된 URL + 제목 2중 체크
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=RECENT_HOURS)
+    seen_keys: set[str] = set()
     for query in ["유인호 세종특별자치시의원", "유인호 세종 후보"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
         resp = requests.get(url, headers=headers, timeout=15)
@@ -147,9 +151,14 @@ def fetch_naver_news() -> list[dict]:
             norm = normalize_url(link)
             desc = html.unescape(re.sub(r"<[^>]+>", "", item.get("description", "")))
             try:
-                date_str = parsedate_to_datetime(item.get("pubDate", "")).strftime("%Y년 %m월 %d일 %H:%M")
+                pub_dt = parsedate_to_datetime(item.get("pubDate", ""))
+                date_str = pub_dt.strftime("%Y년 %m월 %d일 %H:%M")
             except Exception:
+                pub_dt = None
                 date_str = "날짜 미상"
+            # 최근 RECENT_HOURS 시간 이내 기사만 허용
+            if pub_dt and pub_dt < cutoff:
+                continue
             if norm not in seen_keys and title not in seen_keys and is_target_person(title + " " + desc):
                 seen_keys.add(norm)
                 seen_keys.add(title)
@@ -178,10 +187,10 @@ def main():
     save_subscribers(data)
     print(f"구독자 {len(chat_ids)}명")
 
-    # 2. 뉴스 수집
+    # 2. 뉴스 수집 (최근 13시간 이내)
     seen = load_seen()
     articles = fetch_naver_news()
-    new_articles = [a for a in articles if a["url"] not in seen]
+    new_articles = [a for a in articles if a["url"] not in seen][:10]  # 최신순 최대 10건
     print(f"새 기사 {len(new_articles)}건")
 
     # 3. 새 기사 전송
