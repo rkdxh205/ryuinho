@@ -9,6 +9,7 @@ from urllib.parse import urlparse, urlunparse
 import requests
 
 KST = timezone(timedelta(hours=9))
+RECENT_HOURS = 14  # 오후6시 → 다음날 오전8시 최대 간격
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
@@ -139,7 +140,7 @@ def fetch_naver_news() -> list[dict]:
         "X-Naver-Client-Id": NAVER_CLIENT_ID,
         "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
     }
-    today_kst = datetime.now(KST).date()
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=RECENT_HOURS)
     seen_keys: set[str] = set()
     for query in ["유인호 세종특별자치시의원", "유인호 세종 후보"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
@@ -156,8 +157,8 @@ def fetch_naver_news() -> list[dict]:
             except Exception:
                 pub_dt = None
                 date_str = "날짜 미상"
-            # 오늘 날짜(KST) 기사만 허용
-            if pub_dt and pub_dt.astimezone(KST).date() != today_kst:
+            # 최근 14시간 이내 기사만 허용
+            if pub_dt and pub_dt < cutoff:
                 continue
             if norm not in seen_keys and title not in seen_keys and is_target_person(title + " " + desc):
                 seen_keys.add(norm)
