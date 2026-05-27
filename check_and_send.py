@@ -148,11 +148,14 @@ def fetch_naver_news() -> list[dict]:
         resp.raise_for_status()
         for item in resp.json().get("items", []):
             title = html.unescape(re.sub(r"<[^>]+>", "", item.get("title", "")))
-            link = normalize_url(item.get("link", ""))
-            orig = normalize_url(item.get("originallink", ""))
+            # 표시용 URL: 원본 그대로 (쿼리파라미터 유지)
+            display_url = item.get("originallink") or item.get("link", "")
+            # dedup용 key: 쿼리파라미터 제거한 정규화 URL
+            key_link = normalize_url(item.get("link", ""))
+            key_orig = normalize_url(item.get("originallink", ""))
             desc = html.unescape(re.sub(r"<[^>]+>", "", item.get("description", "")))
 
-            # 날짜 파싱 실패 기사는 시간 필터 불가하므로 제외
+            # 날짜 파싱 실패 기사 제외
             try:
                 pub_dt = parsedate_to_datetime(item.get("pubDate", ""))
                 date_str = pub_dt.strftime("%Y년 %m월 %d일 %H:%M")
@@ -163,15 +166,22 @@ def fetch_naver_news() -> list[dict]:
             if pub_dt < cutoff:
                 continue
 
-            # URL 기준 이번 수집 내 중복 제거 (link + originallink 모두 체크)
-            if link in seen_keys or orig in seen_keys:
+            # 이번 수집 내 중복 제거
+            if key_link in seen_keys or key_orig in seen_keys:
                 continue
             if not is_target_person(title + " " + desc):
                 continue
 
-            seen_keys.add(link)
-            seen_keys.add(orig)
-            articles.append({"title": title, "url": link or orig, "orig": orig, "summary": desc, "date": date_str})
+            seen_keys.add(key_link)
+            seen_keys.add(key_orig)
+            articles.append({
+                "title": title,
+                "url": display_url,       # 전송용 원본 URL
+                "key_link": key_link,     # seen_urls 저장용
+                "key_orig": key_orig,     # seen_urls 저장용
+                "summary": desc,
+                "date": date_str,
+            })
     return articles
 
 
@@ -199,10 +209,10 @@ def main():
     # 2. 뉴스 수집 (최근 15시간 이내)
     seen = load_seen()
     articles = fetch_naver_news()
-    # link·originallink 둘 중 하나라도 seen에 있으면 이미 보낸 기사
+    # dedup key 기준으로 이미 보낸 기사 제외
     new_articles = [
         a for a in articles
-        if a["url"] not in seen and a.get("orig", "") not in seen
+        if a["key_link"] not in seen and a["key_orig"] not in seen
     ][:10]
     print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
 
@@ -214,10 +224,8 @@ def main():
         print("새 기사 없음 메시지 전송")
     else:
         for article in new_articles:
-            # link·originallink 모두 seen에 등록해 다음 실행에서 중복 차단
-            seen.add(article["url"])
-            if article.get("orig"):
-                seen.add(article["orig"])
+            seen.add(article["key_link"])
+            seen.add(article["key_orig"])
             for chat_id in chat_ids:
                 send_message(chat_id, format_article(article))
                 print(f"  전송 → {chat_id}: {article['title'][:40]}")
