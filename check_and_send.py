@@ -4,7 +4,7 @@ import os
 import json
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 
 import requests
 
@@ -24,9 +24,20 @@ EXCLUDE_CONTEXTS = ["배우", "가수", "감독", "작가", "교수", "부산", 
 TGAPI = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 
+_TRACKING_PARAMS = {
+    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+    "fbclid", "gclid", "_ga", "_gid", "ref", "referer", "source", "from",
+}
+
 def normalize_url(url: str) -> str:
     p = urlparse(url)
-    return urlunparse((p.scheme, p.netloc, p.path, "", "", ""))
+    if p.query:
+        params = parse_qs(p.query, keep_blank_values=True)
+        filtered = {k: v for k, v in params.items() if k.lower() not in _TRACKING_PARAMS}
+        new_query = urlencode(filtered, doseq=True) if filtered else ""
+    else:
+        new_query = ""
+    return urlunparse((p.scheme, p.netloc, p.path, "", new_query, ""))
 
 
 # ── 구독자 관리 ───────────────────────────
