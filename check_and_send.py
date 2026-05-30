@@ -161,7 +161,7 @@ def fetch_naver_news() -> list[dict]:
             title = html.unescape(re.sub(r"<[^>]+>", "", item.get("title", "")))
             # 표시용 URL: 원본 그대로 (쿼리파라미터 유지)
             display_url = item.get("originallink") or item.get("link", "")
-            # dedup용 key: 쿼리파라미터 제거한 정규화 URL
+            # dedup용 key: 트래킹 파라미터만 제거한 정규화 URL
             key_link = normalize_url(item.get("link", ""))
             key_orig = normalize_url(item.get("originallink", ""))
             desc = html.unescape(re.sub(r"<[^>]+>", "", item.get("description", "")))
