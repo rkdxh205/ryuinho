@@ -210,38 +210,60 @@ def format_article(article: dict) -> str:
 
 # ── 메인 ─────────────────────────────────
 def main():
-    # 1. 구독자 로드 & 커맨드 처리
+    import traceback
+
+    # 구독자는 오류 알림 전송에도 필요하므로 try 바깥에서 먼저 로드
     data = load_subscribers()
-    data = process_updates(data)
-    chat_ids = data["chat_ids"]
-    save_subscribers(data)
-    print(f"구독자 {len(chat_ids)}명")
+    chat_ids: list = data.get("chat_ids", [])
 
-    # 2. 뉴스 수집 (최근 15시간 이내)
-    seen = load_seen()
-    articles = fetch_naver_news()
-    # dedup key 기준으로 이미 보낸 기사 제외
-    new_articles = [
-        a for a in articles
-        if a["key_link"] not in seen and a["key_orig"] not in seen
-    ][:10]
-    print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
+    try:
+        # 1. 커맨드 처리
+        data = process_updates(data)
+        chat_ids = data["chat_ids"]
+        save_subscribers(data)
+        print(f"구독자 {len(chat_ids)}명")
 
-    # 3. 새 기사 전송
-    if not new_articles:
-        now_kst = datetime.now(KST).strftime("%Y년 %m월 %d일 %H:%M")
-        for chat_id in chat_ids:
-            send_message(chat_id, f"📭 {now_kst} 기준\n현재까지 최신기사는 없습니다.")
-        print("새 기사 없음 메시지 전송")
-    else:
-        for article in new_articles:
-            seen.add(article["key_link"])
-            seen.add(article["key_orig"])
+        # 2. 뉴스 수집 (최근 15시간 이내)
+        seen = load_seen()
+        articles = fetch_naver_news()
+        # dedup key 기준으로 이미 보낸 기사 제외
+        new_articles = [
+            a for a in articles
+            if a["key_link"] not in seen and a["key_orig"] not in seen
+        ][:10]
+        print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
+
+        # 3. 새 기사 전송
+        if not new_articles:
+            now_kst = datetime.now(KST).strftime("%Y년 %m월 %d일 %H:%M")
             for chat_id in chat_ids:
-                send_message(chat_id, format_article(article))
-                print(f"  전송 → {chat_id}: {article['title'][:40]}")
+                send_message(chat_id, f"📭 {now_kst} 기준\n현재까지 최신기사는 없습니다.")
+            print("새 기사 없음 메시지 전송")
+        else:
+            for article in new_articles:
+                seen.add(article["key_link"])
+                seen.add(article["key_orig"])
+                for chat_id in chat_ids:
+                    send_message(chat_id, format_article(article))
+                    print(f"  전송 → {chat_id}: {article['title'][:40]}")
 
-    save_seen(seen)
+        save_seen(seen)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        now_kst = datetime.now(KST).strftime("%Y년 %m월 %d일 %H:%M")
+        err_text = (
+            f"⚠️ 봇 오류 발생\n"
+            f"━━━━━━━━━━━━━━━━━━\n"
+            f"🕐 {now_kst}\n\n"
+            f"{type(e).__name__}: {e}"
+        )
+        for chat_id in chat_ids:
+            try:
+                send_message(chat_id, err_text)
+            except Exception:
+                pass
+        raise
 
 
 if __name__ == "__main__":
