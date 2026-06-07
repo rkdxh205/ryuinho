@@ -212,12 +212,12 @@ def format_article(article: dict) -> str:
 def main():
     import traceback
 
-    # 구독자는 오류 알림 전송에도 필요하므로 try 바깥에서 먼저 로드
-    data = load_subscribers()
-    chat_ids: list = data.get("chat_ids", [])
+    chat_ids: list = []  # 오류 알림 전송용 fallback
 
     try:
-        # 1. 커맨드 처리
+        # 1. 구독자 로드 & 커맨드 처리
+        data = load_subscribers()
+        chat_ids = data.get("chat_ids", [])
         data = process_updates(data)
         chat_ids = data["chat_ids"]
         save_subscribers(data)
@@ -263,7 +263,6 @@ def main():
                 send_message(chat_id, err_text)
             except Exception:
                 pass
-        raise
 
 
 if __name__ == "__main__":
