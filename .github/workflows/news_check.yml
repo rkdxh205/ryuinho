@@ -33,4 +33,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen_urls.txt subscribers.json
           git diff --cached --quiet || git commit -m "Update seen_urls & subscribers"
-          git pull --rebase && git push || true
+          git pull --rebase -X theirs
+          git push
