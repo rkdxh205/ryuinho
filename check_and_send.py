@@ -86,7 +86,7 @@ def process_updates(data: dict):
     offset = data.get("offset", 0)
     chat_ids: list = data.get("chat_ids", [])
 
-    resp = tg_get("getUpdates", offset=offset, timeout=10)
+    resp = tg_get("getUpdates", offset=offset, timeout=0)
     updates = resp.get("result", [])
 
     for upd in updates:
