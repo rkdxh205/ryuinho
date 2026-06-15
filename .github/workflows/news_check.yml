@@ -6,6 +6,10 @@ on:
     - cron: '0 9 * * *'     # 매일 오후 6시 KST (UTC 09:00)
   workflow_dispatch:           # 수동 실행 버튼
 
+concurrency:
+  group: news-check
+  cancel-in-progress: false   # 실행 중인 job 완료 후 다음 실행
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -33,5 +37,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen_urls.txt subscribers.json
           git diff --cached --quiet || git commit -m "Update seen_urls & subscribers"
-          git pull --rebase -X theirs || true
-          git push || true
+          git pull --rebase -X theirs
+          git push
