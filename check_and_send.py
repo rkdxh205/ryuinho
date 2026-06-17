@@ -266,5 +266,20 @@ def main():
                 pass
 
 
+def commands_main():
+    import traceback
+    try:
+        data = load_subscribers()
+        data = process_updates(data)
+        save_subscribers(data)
+        print(f"구독자 {len(data['chat_ids'])}명")
+    except Exception as e:
+        print(traceback.format_exc())
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--commands-only" in sys.argv:
+        commands_main()
+    else:
+        main()

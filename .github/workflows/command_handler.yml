@@ -1,0 +1,46 @@
+name: 텔레그램 커맨드 처리
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # 매 5분
+  workflow_dispatch:
+
+concurrency:
+  group: command-handler
+  cancel-in-progress: false
+
+jobs:
+  commands:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 패키지 설치
+        run: pip install requests
+
+      - name: 커맨드 처리
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: python check_and_send.py --commands-only
+
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add subscribers.json
+          if git diff --cached --quiet; then
+            echo "변경 없음 - 커밋 스킵"
+          else
+            git commit -m "Update subscribers"
+            git pull --rebase -X theirs origin main
+            git push origin main
+          fi
