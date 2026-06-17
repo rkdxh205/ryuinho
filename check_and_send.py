@@ -100,7 +100,7 @@ def process_updates(data: dict):
         if text == "/start":
             send_message(chat_id,
                 "안녕하세요! 👋\n"
-                "유인호 세종특별자치시의원·후보 뉴스 알림 봇입니다.\n\n"
+                "유인호 세종특별자치시의원 뉴스 알림 봇입니다.\n\n"
                 "📋 명령어\n"
                 "/subscribe  — 뉴스 알림 구독\n"
                 "/unsubscribe — 구독 취소\n"
@@ -112,7 +112,7 @@ def process_updates(data: dict):
                 chat_ids.append(chat_id)
                 send_message(chat_id,
                     "구독 완료! ✅\n"
-                    "유인호 세종특별자치시의원·후보 관련 새 뉴스가 등록되면 바로 알려드립니다.\n"
+                    "유인호 세종특별자치시의원 관련 새 뉴스가 등록되면 바로 알려드립니다.\n"
                     "(동명이인 기사는 자동으로 제외됩니다)"
                 )
             else:
@@ -153,7 +153,7 @@ def fetch_naver_news() -> list[dict]:
     }
     cutoff = datetime.now(timezone.utc) - timedelta(hours=RECENT_HOURS)
     seen_keys: set[str] = set()  # 이번 수집 내 중복 방지용
-    for query in ["유인호 세종특별자치시의원", "유인호 세종 후보", "유인호 세종시의회"]:
+    for query in ["유인호 세종특별자치시의원", "유인호 세종시의회"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
         resp = requests.get(url, headers=headers, timeout=15)
         resp.raise_for_status()
