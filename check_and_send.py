@@ -192,6 +192,7 @@ def fetch_naver_news() -> list[dict]:
                 "key_orig": key_orig,     # seen_urls 저장용
                 "summary": desc,
                 "date": date_str,
+                "pub_dt": pub_dt,         # 정렬용
             })
     return articles
 
@@ -227,10 +228,10 @@ def main():
         seen = load_seen()
         articles = fetch_naver_news()
         # dedup key 기준으로 이미 보낸 기사 제외
-        new_articles = [
-            a for a in articles
-            if a["key_link"] not in seen and a["key_orig"] not in seen
-        ][:10]
+        new_articles = sorted(
+            [a for a in articles if a["key_link"] not in seen and a["key_orig"] not in seen],
+            key=lambda a: a["pub_dt"]
+        )[:10]
         print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
 
         # 3. 새 기사 전송
