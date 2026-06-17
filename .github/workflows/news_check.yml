@@ -1,4 +1,4 @@
-name: 유인호 뉴스 체크
+name: 유인호 최신뉴스 텔레그램 봇
 
 on:
   schedule:
