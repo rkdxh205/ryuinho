@@ -153,7 +153,7 @@ def fetch_naver_news() -> list[dict]:
     }
     cutoff = datetime.now(timezone.utc) - timedelta(hours=RECENT_HOURS)
     seen_keys: set[str] = set()  # 이번 수집 내 중복 방지용
-    for query in ["유인호 세종특별자치시의원", "유인호 세종시의회"]:
+    for query in ["유인호 세종특별자치시의원", "유인호 세종시의회", "유인호 더불어민주당", "유인호 보람동"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
         resp = requests.get(url, headers=headers, timeout=15)
         resp.raise_for_status()
