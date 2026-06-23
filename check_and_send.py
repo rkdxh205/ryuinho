@@ -216,12 +216,9 @@ def main():
     chat_ids: list = []  # 오류 알림 전송용 fallback
 
     try:
-        # 1. 구독자 로드 & 커맨드 처리
+        # 1. 구독자 로드 (커맨드 처리는 command_handler 전용)
         data = load_subscribers()
         chat_ids = data.get("chat_ids", [])
-        data = process_updates(data)
-        chat_ids = data["chat_ids"]
-        save_subscribers(data)
         print(f"구독자 {len(chat_ids)}명")
 
         # 2. 뉴스 수집 (최근 15시간 이내)
