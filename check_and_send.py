@@ -18,7 +18,7 @@ NAVER_CLIENT_SECRET = os.environ["NAVER_CLIENT_SECRET"]
 SEEN_FILE = "seen_urls.txt"
 SUBSCRIBERS_FILE = "subscribers.json"
 TARGET_NAME = "유인호"
-REQUIRED_KEYWORDS = ["더불어민주당", "민주당", "보람동", "세종", "세종시", "세종시의원", "세종시의회", "세종특별자치시", "세종특별자치시의원", "세종특별자치시의회"]
+REQUIRED_KEYWORDS = ["더불어민주당", "민주당", "보람동", "부의장", "세종", "세종시", "세종시의원", "세종시의회", "세종특별자치시", "세종특별자치시의원", "세종특별자치시의회", "원내대표", "제1부의장"]
 EXCLUDE_CONTEXTS = ["가수", "감독", "고양", "광주", "교수", "대구", "대전", "배우", "부산", "성남", "수원", "울산", "인천", "작가"]
 
 TGAPI = f"https://api.telegram.org/bot{BOT_TOKEN}"
