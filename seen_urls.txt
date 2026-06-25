@@ -11,6 +11,7 @@ https://n.news.naver.com/mnews/article/001/0016155713?sid=100
 https://n.news.naver.com/mnews/article/003/0014020232?sid=102
 https://n.news.naver.com/mnews/article/003/0014023507?sid=102
 https://n.news.naver.com/mnews/article/047/0002520337?sid=100
+https://n.news.naver.com/mnews/article/056/0012205913?sid=100
 https://n.news.naver.com/mnews/article/079/0004161314?sid=102
 https://n.news.naver.com/mnews/article/421/0009019504?sid=102
 https://n.news.naver.com/mnews/article/421/0009019603?sid=102
@@ -18,8 +19,11 @@ https://n.news.naver.com/mnews/article/629/0000508323?sid=102
 https://n.news.naver.com/mnews/article/629/0000510221?sid=102
 https://n.news.naver.com/mnews/article/656/0000179306?sid=100
 https://n.news.naver.com/mnews/article/656/0000179796?sid=102
+https://news.kbs.co.kr/news/pc/view/view.do?ncd=8594360
 https://news.tf.co.kr/read/national/2333643.htm
 https://news.tf.co.kr/read/national/2336054.htm
+https://tjmbc.co.kr/NewsArticle/847524
+https://tjmbc.co.kr/NewsArticle/847577
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
 https://www.ccreview.co.kr/news/articleView.html?idxno=350820
 https://www.ccreview.co.kr/news/articleView.html?idxno=351067
