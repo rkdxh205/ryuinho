@@ -3,6 +3,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=410938
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411141
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411478
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411485
+http://www.ccnnews.co.kr/news/articleView.html?idxno=411556
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=894118
@@ -63,6 +64,7 @@ https://www.jbnews.com/news/articleView.html?idxno=1506961
 https://www.joongdo.co.kr/web/view.php?key=20260618010005288
 https://www.joongdo.co.kr/web/view.php?key=20260624010006642
 https://www.joongdo.co.kr/web/view.php?key=20260701010000336
+https://www.joongdo.co.kr/web/view.php?key=20260702010000822
 https://www.news1.kr/local/sejong-chungbuk/6206146
 https://www.news1.kr/local/sejong-chungbuk/6206217
 https://www.news1.kr/local/sejong-chungbuk/6214660
