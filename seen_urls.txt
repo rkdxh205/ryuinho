@@ -4,6 +4,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=411141
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411478
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411485
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411556
+http://www.ccnnews.co.kr/news/articleView.html?idxno=411619
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=894118
@@ -50,6 +51,8 @@ https://tjmbc.co.kr/NewsArticle/848832
 https://www.aflnews.co.kr/news/articleView.html?idxno=323543
 https://www.aflnews.co.kr/news/articleView.html?idxno=323706
 https://www.bzeronews.com/news/articleView.html?idxno=819471
+https://www.ccdailynews.com/news/articleView.html?idxno=2425921
+https://www.ccdailynews.com/news/articleView.html?idxno=2425924
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
 https://www.ccreview.co.kr/news/articleView.html?idxno=350820
 https://www.ccreview.co.kr/news/articleView.html?idxno=351067
