@@ -32,6 +32,7 @@ https://n.news.naver.com/mnews/article/079/0004161314?sid=102
 https://n.news.naver.com/mnews/article/421/0009019504?sid=102
 https://n.news.naver.com/mnews/article/421/0009019603?sid=102
 https://n.news.naver.com/mnews/article/421/0009035463?sid=102
+https://n.news.naver.com/mnews/article/421/0009043905?sid=102
 https://n.news.naver.com/mnews/article/586/0000132861?sid=102
 https://n.news.naver.com/mnews/article/629/0000508323?sid=102
 https://n.news.naver.com/mnews/article/629/0000510221?sid=102
@@ -90,6 +91,7 @@ https://www.mk.co.kr/article/12090012
 https://www.news1.kr/local/sejong-chungbuk/6206146
 https://www.news1.kr/local/sejong-chungbuk/6206217
 https://www.news1.kr/local/sejong-chungbuk/6214660
+https://www.news1.kr/local/sejong-chungbuk/6219394
 https://www.newscj.com/news/articleView.html?idxno=3414218
 https://www.newsis.com/view/NISX20260622_0003678347
 https://www.newsis.com/view/NISX20260623_0003680705
