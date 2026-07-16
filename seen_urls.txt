@@ -42,6 +42,7 @@ https://n.news.naver.com/mnews/article/629/0000512360?sid=102
 https://n.news.naver.com/mnews/article/656/0000179306?sid=100
 https://n.news.naver.com/mnews/article/656/0000179796?sid=102
 https://n.news.naver.com/mnews/article/656/0000180626?sid=102
+https://n.news.naver.com/mnews/article/656/0000181689?sid=102
 https://news.kbs.co.kr/news/pc/view/view.do?ncd=8594360
 https://news.skbroadband.com/news/articleView.html?idxno=230915
 https://news.skbroadband.com/news/articleView.html?idxno=230996
@@ -68,6 +69,7 @@ https://www.cctoday.co.kr/news/articleView.html?idxno=2232258
 https://www.daejonilbo.com/news/articleView.html?idxno=2282377
 https://www.daejonilbo.com/news/articleView.html?idxno=2283551
 https://www.daejonilbo.com/news/articleView.html?idxno=2285506
+https://www.daejonilbo.com/news/articleView.html?idxno=2288482
 https://www.ekn.kr/web/view.php?key=20260617020004028
 https://www.eroun.net/news/articleView.html?idxno=84654
 https://www.ggilbo.com/news/articleView.html?idxno=1167493
@@ -90,6 +92,7 @@ https://www.joongdo.co.kr/web/view.php?key=20260701010000336
 https://www.joongdo.co.kr/web/view.php?key=20260702010000822
 https://www.joongdo.co.kr/web/view.php?key=20260703010001033
 https://www.joongdo.co.kr/web/view.php?key=20260706010001650
+https://www.joongdo.co.kr/web/view.php?key=20260716010005012
 https://www.mk.co.kr/article/12090012
 https://www.news1.kr/local/sejong-chungbuk/6206146
 https://www.news1.kr/local/sejong-chungbuk/6206217
@@ -111,6 +114,7 @@ https://www.sjsori.com/news/articleView.html?idxno=86744
 https://www.sjsori.com/news/articleView.html?idxno=86929
 https://www.sjsori.com/news/articleView.html?idxno=86951
 https://www.sjsori.com/news/articleView.html?idxno=87230
+https://www.sjsori.com/news/articleView.html?idxno=87653
 https://www.tournews21.com/news/articleView.html?idxno=136839
 https://www.tournews21.com/news/articleView.html?idxno=137731
 https://www.viva100.com/article/20260617500926
