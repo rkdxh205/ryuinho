@@ -52,6 +52,7 @@ https://n.news.naver.com/mnews/article/656/0000181689?sid=102
 https://news.kbs.co.kr/news/pc/view/view.do?ncd=8594360
 https://news.skbroadband.com/news/articleView.html?idxno=230915
 https://news.skbroadband.com/news/articleView.html?idxno=230996
+https://news.skbroadband.com/news/articleView.html?idxno=232968
 https://news.tf.co.kr/read/national/2333643.htm
 https://news.tf.co.kr/read/national/2336054.htm
 https://news.tf.co.kr/read/national/2338704.htm
@@ -62,6 +63,7 @@ https://tjmbc.co.kr/NewsArticle/848832
 https://www.aflnews.co.kr/news/articleView.html?idxno=323543
 https://www.aflnews.co.kr/news/articleView.html?idxno=323706
 https://www.aflnews.co.kr/news/articleView.html?idxno=324995
+https://www.aflnews.co.kr/news/articleView.html?idxno=325019
 https://www.apnews.kr/news/articleView.html?idxno=3049662
 https://www.bzeronews.com/news/articleView.html?idxno=819471
 https://www.ccdailynews.com/news/articleView.html?idxno=2425921
