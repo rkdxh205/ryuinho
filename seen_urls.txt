@@ -20,15 +20,18 @@ http://www.cctimes.kr/news/articleView.html?idxno=917709
 http://www.cctimes.kr/news/articleView.html?idxno=918450
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=894118
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=896632
+http://www.chungnamilbo.co.kr/news/articleView.html?idxno=901429
 http://www.dtnews24.com/news/articleView.html?idxno=812874
 http://www.dtnews24.com/news/articleView.html?idxno=812917
 http://www.dynews.co.kr/news/articleView.html?idxno=855321
 http://www.newsworker.co.kr/news/articleView.html?idxno=431697
 http://www.newsworker.co.kr/news/articleView.html?idxno=437489
+http://www.newsworker.co.kr/news/articleView.html?idxno=439053
 https://cc.newdaily.co.kr/site/data/html/2026/06/17/2026061700122.html
 https://cc.newdaily.co.kr/site/data/html/2026/07/22/2026072200011.html
 https://daily.hankooki.com/news/articleView.html?idxno=1377309
 https://daily.hankooki.com/news/articleView.html?idxno=1381916
+https://daily.hankooki.com/news/articleView.html?idxno=1391148
 https://n.news.naver.com/mnews/article/001/0016155713?sid=100
 https://n.news.naver.com/mnews/article/003/0014020232?sid=102
 https://n.news.naver.com/mnews/article/003/0014023507?sid=102
@@ -45,6 +48,7 @@ https://n.news.naver.com/mnews/article/047/0002523248?sid=100
 https://n.news.naver.com/mnews/article/047/0002523672?sid=100
 https://n.news.naver.com/mnews/article/056/0012205913?sid=100
 https://n.news.naver.com/mnews/article/079/0004161314?sid=102
+https://n.news.naver.com/mnews/article/079/0004173868?sid=102
 https://n.news.naver.com/mnews/article/421/0009019504?sid=102
 https://n.news.naver.com/mnews/article/421/0009019603?sid=102
 https://n.news.naver.com/mnews/article/421/0009035463?sid=102
@@ -53,6 +57,7 @@ https://n.news.naver.com/mnews/article/586/0000132861?sid=102
 https://n.news.naver.com/mnews/article/629/0000508323?sid=102
 https://n.news.naver.com/mnews/article/629/0000510221?sid=102
 https://n.news.naver.com/mnews/article/629/0000512360?sid=102
+https://n.news.naver.com/mnews/article/629/0000520309?sid=102
 https://n.news.naver.com/mnews/article/656/0000179306?sid=100
 https://n.news.naver.com/mnews/article/656/0000179796?sid=102
 https://n.news.naver.com/mnews/article/656/0000180626?sid=102
@@ -64,6 +69,7 @@ https://news.skbroadband.com/news/articleView.html?idxno=232968
 https://news.tf.co.kr/read/national/2333643.htm
 https://news.tf.co.kr/read/national/2336054.htm
 https://news.tf.co.kr/read/national/2338704.htm
+https://news.tf.co.kr/read/national/2348699.htm
 https://tjmbc.co.kr/NewsArticle/847524
 https://tjmbc.co.kr/NewsArticle/847577
 https://tjmbc.co.kr/NewsArticle/848774
@@ -81,6 +87,7 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2425924
 https://www.ccdailynews.com/news/articleView.html?idxno=2429221
 https://www.ccdailynews.com/news/articleView.html?idxno=2429322
 https://www.ccdailynews.com/news/articleView.html?idxno=2430195
+https://www.ccdailynews.com/news/articleView.html?idxno=2431245
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
@@ -111,6 +118,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3627057
 https://www.gukjenews.com/news/articleView.html?idxno=3627068
 https://www.gukjenews.com/news/articleView.html?idxno=3641620
 https://www.gukjenews.com/news/articleView.html?idxno=3642804
+https://www.gukjenews.com/news/articleView.html?idxno=3650777
 https://www.inews365.com/news/article.html?no=925808
 https://www.inews365.com/news/article.html?no=926201
 https://www.inews365.com/news/article.html?no=929177
@@ -126,6 +134,7 @@ https://www.joongdo.co.kr/web/view.php?key=20260706010001650
 https://www.joongdo.co.kr/web/view.php?key=20260716010005012
 https://www.joongdo.co.kr/web/view.php?key=20260725010007482
 https://www.joongdo.co.kr/web/view.php?key=20260727010008072
+https://www.m-i.kr/news/articleView.html?idxno=1397173
 https://www.mk.co.kr/article/12090012
 https://www.news1.kr/local/sejong-chungbuk/6206146
 https://www.news1.kr/local/sejong-chungbuk/6206217
@@ -138,6 +147,7 @@ https://www.newsis.com/view/NISX20260701_0003692100
 https://www.newsis.com/view/NISX20260702_0003693322
 https://www.newsis.com/view/NISX20260726_0003723385
 https://www.nocutnews.co.kr/news/6538013
+https://www.nocutnews.co.kr/news/6555903
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003245760&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003248008&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003248157&CMPT_CD=P0010
@@ -157,4 +167,6 @@ https://www.tournews21.com/news/articleView.html?idxno=139085
 https://www.viva100.com/article/20260617500926
 https://www.viva100.com/article/20260617500939
 https://www.viva100.com/article/20260701501317
+https://www.viva100.com/article/20260730500376
+https://www.viva100.com/article/20260730500817
 https://www.yna.co.kr/view/AKR20260624073500063?input=1195m
