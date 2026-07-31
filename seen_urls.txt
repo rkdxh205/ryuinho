@@ -14,6 +14,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=412603
 http://www.ccnnews.co.kr/news/articleView.html?idxno=412681
 http://www.ccnnews.co.kr/news/articleView.html?idxno=412709
 http://www.ccnnews.co.kr/news/articleView.html?idxno=412744
+http://www.ccnnews.co.kr/news/articleView.html?idxno=412862
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
@@ -164,6 +165,7 @@ https://www.sjsori.com/news/articleView.html?idxno=87653
 https://www.tournews21.com/news/articleView.html?idxno=136839
 https://www.tournews21.com/news/articleView.html?idxno=137731
 https://www.tournews21.com/news/articleView.html?idxno=139085
+https://www.tournews21.com/news/articleView.html?idxno=139858
 https://www.viva100.com/article/20260617500926
 https://www.viva100.com/article/20260617500939
 https://www.viva100.com/article/20260701501317
