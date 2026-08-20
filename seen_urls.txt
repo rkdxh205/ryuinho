@@ -125,6 +125,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3627068
 https://www.gukjenews.com/news/articleView.html?idxno=3641620
 https://www.gukjenews.com/news/articleView.html?idxno=3642804
 https://www.gukjenews.com/news/articleView.html?idxno=3650777
+https://www.gukjenews.com/news/articleView.html?idxno=3669220
 https://www.inews365.com/news/article.html?no=925808
 https://www.inews365.com/news/article.html?no=926201
 https://www.inews365.com/news/article.html?no=929177
@@ -141,6 +142,7 @@ https://www.joongdo.co.kr/web/view.php?key=20260716010005012
 https://www.joongdo.co.kr/web/view.php?key=20260725010007482
 https://www.joongdo.co.kr/web/view.php?key=20260727010008072
 https://www.m-i.kr/news/articleView.html?idxno=1397173
+https://www.m-i.kr/news/articleView.html?idxno=1403895
 https://www.mk.co.kr/article/12090012
 https://www.news1.kr/local/sejong-chungbuk/6206146
 https://www.news1.kr/local/sejong-chungbuk/6206217
@@ -178,4 +180,5 @@ https://www.viva100.com/article/20260730500376
 https://www.viva100.com/article/20260730500817
 https://www.viva100.com/article/20260803500744
 https://www.viva100.com/article/20260803500759
+https://www.viva100.com/article/20260820500720
 https://www.yna.co.kr/view/AKR20260624073500063?input=1195m
