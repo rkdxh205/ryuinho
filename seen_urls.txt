@@ -16,6 +16,8 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=412709
 http://www.ccnnews.co.kr/news/articleView.html?idxno=412744
 http://www.ccnnews.co.kr/news/articleView.html?idxno=412862
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413637
+http://www.ccnnews.co.kr/news/articleView.html?idxno=413824
+http://www.ccnnews.co.kr/news/articleView.html?idxno=413827
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
@@ -36,6 +38,7 @@ https://daily.hankooki.com/news/articleView.html?idxno=1377309
 https://daily.hankooki.com/news/articleView.html?idxno=1381916
 https://daily.hankooki.com/news/articleView.html?idxno=1391148
 https://daily.hankooki.com/news/articleView.html?idxno=1397287
+https://daily.hankooki.com/news/articleView.html?idxno=1398682
 https://n.news.naver.com/mnews/article/001/0016155713?sid=100
 https://n.news.naver.com/mnews/article/003/0014020232?sid=102
 https://n.news.naver.com/mnews/article/003/0014023507?sid=102
@@ -86,6 +89,7 @@ https://www.aflnews.co.kr/news/articleView.html?idxno=325286
 https://www.apnews.kr/news/articleView.html?idxno=3049662
 https://www.bzeronews.com/news/articleView.html?idxno=819471
 https://www.bzeronews.com/news/articleView.html?idxno=820487
+https://www.bzeronews.com/news/articleView.html?idxno=821589
 https://www.ccdailynews.com/news/articleView.html?idxno=2425921
 https://www.ccdailynews.com/news/articleView.html?idxno=2425924
 https://www.ccdailynews.com/news/articleView.html?idxno=2429221
@@ -109,6 +113,7 @@ https://www.daejonilbo.com/news/articleView.html?idxno=2282377
 https://www.daejonilbo.com/news/articleView.html?idxno=2283551
 https://www.daejonilbo.com/news/articleView.html?idxno=2285506
 https://www.daejonilbo.com/news/articleView.html?idxno=2288482
+https://www.dynews.co.kr/news/articleView.html?idxno=862729
 https://www.ekn.kr/web/view.php?key=20260617020004028
 https://www.eroun.net/news/articleView.html?idxno=84654
 https://www.ggilbo.com/news/articleView.html?idxno=1167493
@@ -155,6 +160,7 @@ https://www.newsis.com/view/NISX20260623_0003680705
 https://www.newsis.com/view/NISX20260701_0003692100
 https://www.newsis.com/view/NISX20260702_0003693322
 https://www.newsis.com/view/NISX20260726_0003723385
+https://www.newstnt.com/news/articleView.html?idxno=715072
 https://www.newsworker.co.kr/news/articleView.html?idxno=500561
 https://www.newsworker.co.kr/news/articleView.html?idxno=500562
 https://www.nocutnews.co.kr/news/6538013
