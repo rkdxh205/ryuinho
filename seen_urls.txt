@@ -25,9 +25,11 @@ http://www.cctimes.kr/news/articleView.html?idxno=918450
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=894118
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=896632
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=901429
+http://www.chungnamilbo.co.kr/news/articleView.html?idxno=905596
 http://www.dtnews24.com/news/articleView.html?idxno=812874
 http://www.dtnews24.com/news/articleView.html?idxno=812917
 http://www.dynews.co.kr/news/articleView.html?idxno=855321
+http://www.newsprime.co.kr/news/article.html?no=745107
 http://www.newsworker.co.kr/news/articleView.html?idxno=431697
 http://www.newsworker.co.kr/news/articleView.html?idxno=437489
 http://www.newsworker.co.kr/news/articleView.html?idxno=439053
@@ -107,6 +109,7 @@ https://www.ccreview.co.kr/news/articleView.html?idxno=351970
 https://www.ccreview.co.kr/news/articleView.html?idxno=353617
 https://www.ccreview.co.kr/news/articleView.html?idxno=353736
 https://www.ccreview.co.kr/news/articleView.html?idxno=354147
+https://www.ccreview.co.kr/news/articleView.html?idxno=355732
 https://www.cctoday.co.kr/news/articleView.html?idxno=2232258
 https://www.cctoday.co.kr/news/articleView.html?idxno=2233435
 https://www.daejonilbo.com/news/articleView.html?idxno=2282377
@@ -160,9 +163,11 @@ https://www.newsis.com/view/NISX20260623_0003680705
 https://www.newsis.com/view/NISX20260701_0003692100
 https://www.newsis.com/view/NISX20260702_0003693322
 https://www.newsis.com/view/NISX20260726_0003723385
+https://www.newspim.com/news/view/20260825001111
 https://www.newstnt.com/news/articleView.html?idxno=715072
 https://www.newsworker.co.kr/news/articleView.html?idxno=500561
 https://www.newsworker.co.kr/news/articleView.html?idxno=500562
+https://www.ngonews.kr/news/articleView.html?idxno=236277
 https://www.nocutnews.co.kr/news/6538013
 https://www.nocutnews.co.kr/news/6555903
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003245760&CMPT_CD=P0010
@@ -190,4 +195,5 @@ https://www.viva100.com/article/20260730500817
 https://www.viva100.com/article/20260803500744
 https://www.viva100.com/article/20260803500759
 https://www.viva100.com/article/20260820500720
+https://www.viva100.com/article/20260824501530
 https://www.yna.co.kr/view/AKR20260624073500063?input=1195m
