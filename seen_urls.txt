@@ -18,6 +18,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=412862
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413637
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413824
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413827
+http://www.ccnnews.co.kr/news/articleView.html?idxno=413895
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
@@ -41,6 +42,7 @@ https://daily.hankooki.com/news/articleView.html?idxno=1381916
 https://daily.hankooki.com/news/articleView.html?idxno=1391148
 https://daily.hankooki.com/news/articleView.html?idxno=1397287
 https://daily.hankooki.com/news/articleView.html?idxno=1398682
+https://daily.hankooki.com/news/articleView.html?idxno=1399165
 https://n.news.naver.com/mnews/article/001/0016155713?sid=100
 https://n.news.naver.com/mnews/article/003/0014020232?sid=102
 https://n.news.naver.com/mnews/article/003/0014023507?sid=102
@@ -99,6 +101,7 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2429322
 https://www.ccdailynews.com/news/articleView.html?idxno=2430195
 https://www.ccdailynews.com/news/articleView.html?idxno=2431245
 https://www.ccdailynews.com/news/articleView.html?idxno=2435113
+https://www.ccdailynews.com/news/articleView.html?idxno=2436219
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
@@ -120,6 +123,7 @@ https://www.dynews.co.kr/news/articleView.html?idxno=862729
 https://www.ekn.kr/web/view.php?key=20260617020004028
 https://www.eroun.net/news/articleView.html?idxno=84654
 https://www.ggilbo.com/news/articleView.html?idxno=1167493
+https://www.ggilbo.com/news/articleView.html?idxno=1177499
 https://www.goodmorningcc.com/news/articleView.html?idxno=447916
 https://www.goodmorningcc.com/news/articleView.html?idxno=447955
 https://www.goodmorningcc.com/news/articleView.html?idxno=448385
@@ -196,4 +200,5 @@ https://www.viva100.com/article/20260803500744
 https://www.viva100.com/article/20260803500759
 https://www.viva100.com/article/20260820500720
 https://www.viva100.com/article/20260824501530
+https://www.wikitree.co.kr/articles/1154891
 https://www.yna.co.kr/view/AKR20260624073500063?input=1195m
