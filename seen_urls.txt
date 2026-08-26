@@ -29,6 +29,7 @@ http://www.chungnamilbo.co.kr/news/articleView.html?idxno=901429
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=905596
 http://www.dtnews24.com/news/articleView.html?idxno=812874
 http://www.dtnews24.com/news/articleView.html?idxno=812917
+http://www.dtnews24.com/news/articleView.html?idxno=814589
 http://www.dynews.co.kr/news/articleView.html?idxno=855321
 http://www.newsprime.co.kr/news/article.html?no=745107
 http://www.newsworker.co.kr/news/articleView.html?idxno=431697
@@ -139,6 +140,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3642804
 https://www.gukjenews.com/news/articleView.html?idxno=3650777
 https://www.gukjenews.com/news/articleView.html?idxno=3669220
 https://www.gukjenews.com/news/articleView.html?idxno=3673106
+https://www.gukjenews.com/news/articleView.html?idxno=3674932
 https://www.inews365.com/news/article.html?no=925808
 https://www.inews365.com/news/article.html?no=926201
 https://www.inews365.com/news/article.html?no=929177
@@ -200,5 +202,6 @@ https://www.viva100.com/article/20260803500744
 https://www.viva100.com/article/20260803500759
 https://www.viva100.com/article/20260820500720
 https://www.viva100.com/article/20260824501530
+https://www.viva100.com/article/20260825501378
 https://www.wikitree.co.kr/articles/1154891
 https://www.yna.co.kr/view/AKR20260624073500063?input=1195m
