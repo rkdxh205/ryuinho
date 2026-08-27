@@ -1,3 +1,4 @@
+http://www.breaknews.com/1231869
 http://www.ccnnews.co.kr/news/articleView.html?idxno=410900
 http://www.ccnnews.co.kr/news/articleView.html?idxno=410938
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411141
@@ -19,6 +20,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=413637
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413824
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413827
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413895
+http://www.ccnnews.co.kr/news/articleView.html?idxno=413973
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
@@ -103,6 +105,7 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2430195
 https://www.ccdailynews.com/news/articleView.html?idxno=2431245
 https://www.ccdailynews.com/news/articleView.html?idxno=2435113
 https://www.ccdailynews.com/news/articleView.html?idxno=2436219
+https://www.ccdailynews.com/news/articleView.html?idxno=2436578
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
@@ -203,5 +206,6 @@ https://www.viva100.com/article/20260803500759
 https://www.viva100.com/article/20260820500720
 https://www.viva100.com/article/20260824501530
 https://www.viva100.com/article/20260825501378
+https://www.viva100.com/article/20260826501353
 https://www.wikitree.co.kr/articles/1154891
 https://www.yna.co.kr/view/AKR20260624073500063?input=1195m
