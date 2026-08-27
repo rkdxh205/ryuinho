@@ -32,7 +32,9 @@ http://www.chungnamilbo.co.kr/news/articleView.html?idxno=905596
 http://www.dtnews24.com/news/articleView.html?idxno=812874
 http://www.dtnews24.com/news/articleView.html?idxno=812917
 http://www.dtnews24.com/news/articleView.html?idxno=814589
+http://www.dtnews24.com/news/articleView.html?idxno=814666
 http://www.dynews.co.kr/news/articleView.html?idxno=855321
+http://www.hansbiz.co.kr/news/articleView.html?idxno=860089
 http://www.newsprime.co.kr/news/article.html?no=745107
 http://www.newsworker.co.kr/news/articleView.html?idxno=431697
 http://www.newsworker.co.kr/news/articleView.html?idxno=437489
@@ -106,6 +108,7 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2431245
 https://www.ccdailynews.com/news/articleView.html?idxno=2435113
 https://www.ccdailynews.com/news/articleView.html?idxno=2436219
 https://www.ccdailynews.com/news/articleView.html?idxno=2436578
+https://www.ccdailynews.com/news/articleView.html?idxno=2436806
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
@@ -124,6 +127,7 @@ https://www.daejonilbo.com/news/articleView.html?idxno=2283551
 https://www.daejonilbo.com/news/articleView.html?idxno=2285506
 https://www.daejonilbo.com/news/articleView.html?idxno=2288482
 https://www.dynews.co.kr/news/articleView.html?idxno=862729
+https://www.dynews.co.kr/news/articleView.html?idxno=863284
 https://www.ekn.kr/web/view.php?key=20260617020004028
 https://www.eroun.net/news/articleView.html?idxno=84654
 https://www.ggilbo.com/news/articleView.html?idxno=1167493
@@ -144,6 +148,8 @@ https://www.gukjenews.com/news/articleView.html?idxno=3650777
 https://www.gukjenews.com/news/articleView.html?idxno=3669220
 https://www.gukjenews.com/news/articleView.html?idxno=3673106
 https://www.gukjenews.com/news/articleView.html?idxno=3674932
+https://www.gukjenews.com/news/articleView.html?idxno=3676796
+https://www.gukjenews.com/news/articleView.html?idxno=3676941
 https://www.inews365.com/news/article.html?no=925808
 https://www.inews365.com/news/article.html?no=926201
 https://www.inews365.com/news/article.html?no=929177
@@ -159,6 +165,8 @@ https://www.joongdo.co.kr/web/view.php?key=20260706010001650
 https://www.joongdo.co.kr/web/view.php?key=20260716010005012
 https://www.joongdo.co.kr/web/view.php?key=20260725010007482
 https://www.joongdo.co.kr/web/view.php?key=20260727010008072
+https://www.kmaeil.com/news/articleView.html?idxno=649864
+https://www.kyeongin.com/article/1769756
 https://www.m-i.kr/news/articleView.html?idxno=1397173
 https://www.m-i.kr/news/articleView.html?idxno=1403895
 https://www.mk.co.kr/article/12090012
@@ -173,12 +181,14 @@ https://www.newsis.com/view/NISX20260701_0003692100
 https://www.newsis.com/view/NISX20260702_0003693322
 https://www.newsis.com/view/NISX20260726_0003723385
 https://www.newspim.com/news/view/20260825001111
+https://www.newspim.com/news/view/20260827001184
 https://www.newstnt.com/news/articleView.html?idxno=715072
 https://www.newsworker.co.kr/news/articleView.html?idxno=500561
 https://www.newsworker.co.kr/news/articleView.html?idxno=500562
 https://www.ngonews.kr/news/articleView.html?idxno=236277
 https://www.nocutnews.co.kr/news/6538013
 https://www.nocutnews.co.kr/news/6555903
+https://www.nspna.com/news/?mode=view&newsid=825882
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003245760&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003248008&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003248157&CMPT_CD=P0010
