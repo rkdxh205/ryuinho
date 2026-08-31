@@ -31,6 +31,7 @@ http://www.chungnamilbo.co.kr/news/articleView.html?idxno=894118
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=896632
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=901429
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=905596
+http://www.chungnamilbo.co.kr/news/articleView.html?idxno=906776
 http://www.dtnews24.com/news/articleView.html?idxno=812874
 http://www.dtnews24.com/news/articleView.html?idxno=812917
 http://www.dtnews24.com/news/articleView.html?idxno=814589
@@ -44,6 +45,7 @@ http://www.newsworker.co.kr/news/articleView.html?idxno=439053
 http://www.newsworker.co.kr/news/articleView.html?idxno=441854
 https://cc.newdaily.co.kr/site/data/html/2026/06/17/2026061700122.html
 https://cc.newdaily.co.kr/site/data/html/2026/07/22/2026072200011.html
+https://cc.newdaily.co.kr/site/data/html/2026/08/31/2026083100237.html
 https://daily.hankooki.com/news/articleView.html?idxno=1377309
 https://daily.hankooki.com/news/articleView.html?idxno=1381916
 https://daily.hankooki.com/news/articleView.html?idxno=1391148
@@ -113,8 +115,10 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2436219
 https://www.ccdailynews.com/news/articleView.html?idxno=2436578
 https://www.ccdailynews.com/news/articleView.html?idxno=2436806
 https://www.ccdailynews.com/news/articleView.html?idxno=2436993
+https://www.ccdailynews.com/news/articleView.html?idxno=2437407
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067
+https://www.ccdn.co.kr/news/articleView.html?idxno=1096685
 https://www.ccreview.co.kr/news/articleView.html?idxno=350623
 https://www.ccreview.co.kr/news/articleView.html?idxno=350820
 https://www.ccreview.co.kr/news/articleView.html?idxno=351067
@@ -137,6 +141,7 @@ https://www.ekn.kr/web/view.php?key=20260617020004028
 https://www.eroun.net/news/articleView.html?idxno=84654
 https://www.ggilbo.com/news/articleView.html?idxno=1167493
 https://www.ggilbo.com/news/articleView.html?idxno=1177499
+https://www.ggilbo.com/news/articleView.html?idxno=1178687
 https://www.goodmorningcc.com/news/articleView.html?idxno=447916
 https://www.goodmorningcc.com/news/articleView.html?idxno=447955
 https://www.goodmorningcc.com/news/articleView.html?idxno=448385
@@ -193,6 +198,7 @@ https://www.newstnt.com/news/articleView.html?idxno=715072
 https://www.newsworker.co.kr/news/articleView.html?idxno=500561
 https://www.newsworker.co.kr/news/articleView.html?idxno=500562
 https://www.newsworker.co.kr/news/articleView.html?idxno=501503
+https://www.newsworker.co.kr/news/articleView.html?idxno=501748
 https://www.ngonews.kr/news/articleView.html?idxno=236277
 https://www.nocutnews.co.kr/news/6538013
 https://www.nocutnews.co.kr/news/6555903
@@ -210,6 +216,7 @@ https://www.sjsori.com/news/articleView.html?idxno=86929
 https://www.sjsori.com/news/articleView.html?idxno=86951
 https://www.sjsori.com/news/articleView.html?idxno=87230
 https://www.sjsori.com/news/articleView.html?idxno=87653
+https://www.thepublic.kr/news/articleView.html?idxno=316872
 https://www.tournews21.com/news/articleView.html?idxno=136839
 https://www.tournews21.com/news/articleView.html?idxno=137731
 https://www.tournews21.com/news/articleView.html?idxno=139085
