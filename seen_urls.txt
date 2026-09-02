@@ -22,6 +22,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=413827
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413895
 http://www.ccnnews.co.kr/news/articleView.html?idxno=413973
 http://www.ccnnews.co.kr/news/articleView.html?idxno=414125
+http://www.ccnnews.co.kr/news/articleView.html?idxno=414358
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
@@ -52,6 +53,7 @@ https://daily.hankooki.com/news/articleView.html?idxno=1391148
 https://daily.hankooki.com/news/articleView.html?idxno=1397287
 https://daily.hankooki.com/news/articleView.html?idxno=1398682
 https://daily.hankooki.com/news/articleView.html?idxno=1399165
+https://daily.hankooki.com/news/articleView.html?idxno=1402056
 https://n.news.naver.com/mnews/article/001/0016155713?sid=100
 https://n.news.naver.com/mnews/article/003/0014020232?sid=102
 https://n.news.naver.com/mnews/article/003/0014023507?sid=102
@@ -66,6 +68,7 @@ https://n.news.naver.com/mnews/article/047/0002521424?sid=100
 https://n.news.naver.com/mnews/article/047/0002521527?sid=102
 https://n.news.naver.com/mnews/article/047/0002523248?sid=100
 https://n.news.naver.com/mnews/article/047/0002523672?sid=100
+https://n.news.naver.com/mnews/article/047/0002527522?sid=100
 https://n.news.naver.com/mnews/article/056/0012205913?sid=100
 https://n.news.naver.com/mnews/article/079/0004161314?sid=102
 https://n.news.naver.com/mnews/article/079/0004173868?sid=102
@@ -176,6 +179,7 @@ https://www.joongdo.co.kr/web/view.php?key=20260706010001650
 https://www.joongdo.co.kr/web/view.php?key=20260716010005012
 https://www.joongdo.co.kr/web/view.php?key=20260725010007482
 https://www.joongdo.co.kr/web/view.php?key=20260727010008072
+https://www.joongdo.co.kr/web/view.php?key=20260902010000819
 https://www.kihoilbo.co.kr/news/articleView.html?idxno=3033024
 https://www.kmaeil.com/news/articleView.html?idxno=649864
 https://www.kyeongin.com/article/1769756
@@ -200,6 +204,7 @@ https://www.newsworker.co.kr/news/articleView.html?idxno=500561
 https://www.newsworker.co.kr/news/articleView.html?idxno=500562
 https://www.newsworker.co.kr/news/articleView.html?idxno=501503
 https://www.newsworker.co.kr/news/articleView.html?idxno=501748
+https://www.newsworker.co.kr/news/articleView.html?idxno=502235
 https://www.ngonews.kr/news/articleView.html?idxno=236277
 https://www.nocutnews.co.kr/news/6538013
 https://www.nocutnews.co.kr/news/6555903
@@ -211,6 +216,7 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003248487&CMPT_CD=P00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003248817&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003253135&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003254271&CMPT_CD=P0010
+https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003263955&CMPT_CD=P0010
 https://www.sisajournal.com/news/articleView.html?idxno=378426
 https://www.sjsori.com/news/articleView.html?idxno=86744
 https://www.sjsori.com/news/articleView.html?idxno=86929
