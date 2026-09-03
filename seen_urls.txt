@@ -85,10 +85,12 @@ https://n.news.naver.com/mnews/article/656/0000179306?sid=100
 https://n.news.naver.com/mnews/article/656/0000179796?sid=102
 https://n.news.naver.com/mnews/article/656/0000180626?sid=102
 https://n.news.naver.com/mnews/article/656/0000181689?sid=102
+https://n.news.naver.com/mnews/article/656/0000185822?sid=102
 https://news.kbs.co.kr/news/pc/view/view.do?ncd=8594360
 https://news.skbroadband.com/news/articleView.html?idxno=230915
 https://news.skbroadband.com/news/articleView.html?idxno=230996
 https://news.skbroadband.com/news/articleView.html?idxno=232968
+https://news.skbroadband.com/news/articleView.html?idxno=236939
 https://news.tf.co.kr/read/national/2333643.htm
 https://news.tf.co.kr/read/national/2336054.htm
 https://news.tf.co.kr/read/national/2338704.htm
@@ -138,6 +140,7 @@ https://www.daejonilbo.com/news/articleView.html?idxno=2282377
 https://www.daejonilbo.com/news/articleView.html?idxno=2283551
 https://www.daejonilbo.com/news/articleView.html?idxno=2285506
 https://www.daejonilbo.com/news/articleView.html?idxno=2288482
+https://www.daejonilbo.com/news/articleView.html?idxno=2298660
 https://www.dynews.co.kr/news/articleView.html?idxno=862729
 https://www.dynews.co.kr/news/articleView.html?idxno=863284
 https://www.ekn.kr/web/view.php?key=20260617020004028
