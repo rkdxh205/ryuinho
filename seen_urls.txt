@@ -29,6 +29,7 @@ http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
 http://www.cctimes.kr/news/articleView.html?idxno=918450
 http://www.cctimes.kr/news/articleView.html?idxno=924106
+http://www.cctimes.kr/news/articleView.html?idxno=925965
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=894118
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=896632
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=901429
@@ -55,6 +56,7 @@ https://daily.hankooki.com/news/articleView.html?idxno=1397287
 https://daily.hankooki.com/news/articleView.html?idxno=1398682
 https://daily.hankooki.com/news/articleView.html?idxno=1399165
 https://daily.hankooki.com/news/articleView.html?idxno=1402056
+https://daily.hankooki.com/news/articleView.html?idxno=1403492
 https://n.news.naver.com/mnews/article/001/0016155713?sid=100
 https://n.news.naver.com/mnews/article/003/0014020232?sid=102
 https://n.news.naver.com/mnews/article/003/0014023507?sid=102
@@ -71,6 +73,7 @@ https://n.news.naver.com/mnews/article/047/0002523248?sid=100
 https://n.news.naver.com/mnews/article/047/0002523672?sid=100
 https://n.news.naver.com/mnews/article/047/0002527522?sid=100
 https://n.news.naver.com/mnews/article/047/0002527911?sid=102
+https://n.news.naver.com/mnews/article/047/0002528068?sid=100
 https://n.news.naver.com/mnews/article/056/0012205913?sid=100
 https://n.news.naver.com/mnews/article/079/0004161314?sid=102
 https://n.news.naver.com/mnews/article/079/0004173868?sid=102
@@ -123,6 +126,7 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2436578
 https://www.ccdailynews.com/news/articleView.html?idxno=2436806
 https://www.ccdailynews.com/news/articleView.html?idxno=2436993
 https://www.ccdailynews.com/news/articleView.html?idxno=2437407
+https://www.ccdailynews.com/news/articleView.html?idxno=2439024
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067
 https://www.ccdn.co.kr/news/articleView.html?idxno=1096685
@@ -170,6 +174,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3674932
 https://www.gukjenews.com/news/articleView.html?idxno=3676796
 https://www.gukjenews.com/news/articleView.html?idxno=3676941
 https://www.gukjenews.com/news/articleView.html?idxno=3678326
+https://www.gukjenews.com/news/articleView.html?idxno=3687357
 https://www.inews365.com/news/article.html?no=925808
 https://www.inews365.com/news/article.html?no=926201
 https://www.inews365.com/news/article.html?no=929177
@@ -204,6 +209,7 @@ https://www.newsis.com/view/NISX20260702_0003693322
 https://www.newsis.com/view/NISX20260726_0003723385
 https://www.newspim.com/news/view/20260825001111
 https://www.newspim.com/news/view/20260827001184
+https://www.newspim.com/news/view/20260907001110
 https://www.newstnt.com/news/articleView.html?idxno=715072
 https://www.newstnt.com/news/articleView.html?idxno=716238
 https://www.newsworker.co.kr/news/articleView.html?idxno=500561
@@ -211,6 +217,7 @@ https://www.newsworker.co.kr/news/articleView.html?idxno=500562
 https://www.newsworker.co.kr/news/articleView.html?idxno=501503
 https://www.newsworker.co.kr/news/articleView.html?idxno=501748
 https://www.newsworker.co.kr/news/articleView.html?idxno=502235
+https://www.newsworker.co.kr/news/articleView.html?idxno=502984
 https://www.ngonews.kr/news/articleView.html?idxno=236277
 https://www.nocutnews.co.kr/news/6538013
 https://www.nocutnews.co.kr/news/6555903
@@ -224,6 +231,7 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003253135&CMPT_CD=P00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003254271&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003263955&CMPT_CD=P0010
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003264919&CMPT_CD=P0010
+https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265308&CMPT_CD=P0010
 https://www.sisajournal.com/news/articleView.html?idxno=378426
 https://www.sjsori.com/news/articleView.html?idxno=86744
 https://www.sjsori.com/news/articleView.html?idxno=86929
