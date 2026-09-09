@@ -26,6 +26,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=414125
 http://www.ccnnews.co.kr/news/articleView.html?idxno=414358
 http://www.ccnnews.co.kr/news/articleView.html?idxno=414514
 http://www.ccnnews.co.kr/news/articleView.html?idxno=414595
+http://www.ccnnews.co.kr/news/articleView.html?idxno=414645
 http://www.cctimes.kr/news/articleView.html?idxno=913090
 http://www.cctimes.kr/news/articleView.html?idxno=914534
 http://www.cctimes.kr/news/articleView.html?idxno=917709
@@ -198,6 +199,7 @@ https://www.joongdo.co.kr/web/view.php?key=20260716010005012
 https://www.joongdo.co.kr/web/view.php?key=20260725010007482
 https://www.joongdo.co.kr/web/view.php?key=20260727010008072
 https://www.joongdo.co.kr/web/view.php?key=20260902010000819
+https://www.joongdo.co.kr/web/view.php?key=20260909010002846
 https://www.kihoilbo.co.kr/news/articleView.html?idxno=3033024
 https://www.kmaeil.com/news/articleView.html?idxno=649864
 https://www.kyeongin.com/article/1769756
@@ -266,6 +268,7 @@ https://www.viva100.com/article/20260824501530
 https://www.viva100.com/article/20260825501378
 https://www.viva100.com/article/20260826501353
 https://www.viva100.com/article/20260830500652
+https://www.viva100.com/article/20260909500069
 https://www.wikitree.co.kr/articles/1154891
 https://www.wikitree.co.kr/articles/1155646
 https://www.wikitree.co.kr/articles/1158166
