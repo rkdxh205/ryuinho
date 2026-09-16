@@ -49,6 +49,7 @@ http://www.newsworker.co.kr/news/articleView.html?idxno=431697
 http://www.newsworker.co.kr/news/articleView.html?idxno=437489
 http://www.newsworker.co.kr/news/articleView.html?idxno=439053
 http://www.newsworker.co.kr/news/articleView.html?idxno=441854
+https://biz.heraldcorp.com/article/10874920
 https://cc.newdaily.co.kr/site/data/html/2026/06/17/2026061700122.html
 https://cc.newdaily.co.kr/site/data/html/2026/07/22/2026072200011.html
 https://cc.newdaily.co.kr/site/data/html/2026/08/31/2026083100237.html
@@ -67,6 +68,8 @@ https://n.news.naver.com/mnews/article/003/0014041184?sid=102
 https://n.news.naver.com/mnews/article/003/0014042880?sid=102
 https://n.news.naver.com/mnews/article/003/0014088233?sid=102
 https://n.news.naver.com/mnews/article/009/0005702500?sid=102
+https://n.news.naver.com/mnews/article/014/0005576518?sid=102
+https://n.news.naver.com/mnews/article/016/0002697967?sid=101
 https://n.news.naver.com/mnews/article/047/0002520337?sid=100
 https://n.news.naver.com/mnews/article/047/0002521201?sid=100
 https://n.news.naver.com/mnews/article/047/0002521279?sid=100
@@ -159,6 +162,7 @@ https://www.dynews.co.kr/news/articleView.html?idxno=862729
 https://www.dynews.co.kr/news/articleView.html?idxno=863284
 https://www.ekn.kr/web/view.php?key=20260617020004028
 https://www.eroun.net/news/articleView.html?idxno=84654
+https://www.fnnews.com/news/202609160846457041
 https://www.ggilbo.com/news/articleView.html?idxno=1167493
 https://www.ggilbo.com/news/articleView.html?idxno=1177499
 https://www.ggilbo.com/news/articleView.html?idxno=1178687
