@@ -49,6 +49,7 @@ http://www.lak.co.kr/news/boardview.php?id=23925
 http://www.metroseoul.co.kr/article/20260916500166
 http://www.newsprime.co.kr/news/article.html?no=745107
 http://www.newsprime.co.kr/news/article.html?no=747960
+http://www.newstown.co.kr/news/articleView.html?idxno=716114
 http://www.newsworker.co.kr/news/articleView.html?idxno=431697
 http://www.newsworker.co.kr/news/articleView.html?idxno=437489
 http://www.newsworker.co.kr/news/articleView.html?idxno=439053
@@ -195,6 +196,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3676941
 https://www.gukjenews.com/news/articleView.html?idxno=3678326
 https://www.gukjenews.com/news/articleView.html?idxno=3687357
 https://www.gukjenews.com/news/articleView.html?idxno=3690596
+https://www.gukjenews.com/news/articleView.html?idxno=3697482
 https://www.inews365.com/news/article.html?no=925808
 https://www.inews365.com/news/article.html?no=926201
 https://www.inews365.com/news/article.html?no=929177
