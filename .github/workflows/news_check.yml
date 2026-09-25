@@ -40,8 +40,18 @@ jobs:
           git add seen_urls.txt
           if git diff --cached --quiet; then
             echo "변경 없음 - 커밋 스킵"
-          else
-            git commit -m "Update seen_urls & subscribers"
-            git pull --rebase -X theirs origin main
-            git push origin main
+            exit 0
           fi
+          git commit -m "Update seen_urls"
+          # 두 워크플로가 동시에 푸시하면 한쪽이 거부된다.
+          # 실패 시 재시도하지 않으면 offset/seen 상태가 유실되므로 재시도한다.
+          for i in 1 2 3 4 5; do
+            if git pull --rebase -X theirs origin main && git push origin main; then
+              echo "푸시 완료 (시도 $i회)"
+              exit 0
+            fi
+            echo "푸시 경합 감지 - 재시도 $i/5"
+            sleep $((i * 5))
+          done
+          echo "::error::푸시 5회 실패 - 상태 저장 안 됨"
+          exit 1

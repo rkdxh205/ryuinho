@@ -19,6 +19,7 @@ NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
 NAVER_CLIENT_SECRET = os.environ["NAVER_CLIENT_SECRET"]
 
 SEEN_FILE = "seen_urls.txt"
+SEEN_RETENTION_DAYS = 30   # 보관 기간. RECENT_HOURS(24h)보다 충분히 길어 안전
 SUBSCRIBERS_FILE = "subscribers.json"
 TARGET_NAME = "유인호"
 REQUIRED_KEYWORDS = ["더불어민주당", "민주당", "보람동", "부의장", "세종", "세종시", "세종시의원", "세종시의회", "세종특별자치시", "세종특별자치시의원", "세종특별자치시의회", "원내대표", "제1부의장"]
@@ -57,16 +58,40 @@ def save_subscribers(data: dict):
 
 
 # ── seen_urls 관리 ───────────────────────
-def load_seen() -> set[str]:
+def load_seen() -> dict[str, str]:
+    """URL → 기록 시각(ISO). 'URL\t시각' 형식이며,
+    시각이 없는 옛 형식은 현재 시각으로 승격해 그대로 보존한다."""
     if not os.path.exists(SEEN_FILE):
-        return set()
+        return {}
+    now = datetime.now(KST).isoformat(timespec="seconds")
+    seen: dict[str, str] = {}
     with open(SEEN_FILE, encoding="utf-8") as f:
-        return {line.strip() for line in f if line.strip()}
+        for line in f:
+            url, _, ts = line.strip().partition("\t")
+            if url:
+                seen[url] = ts or now
+    return seen
 
 
-def save_seen(seen: set[str]):
+def save_seen(seen: dict[str, str]):
+    """보관 기간이 지난 항목을 정리해 파일이 무한히 커지지 않도록 한다."""
+    cutoff = datetime.now(KST) - timedelta(days=SEEN_RETENTION_DAYS)
+    kept: dict[str, str] = {}
+    dropped = 0
+    for url, ts in seen.items():
+        if not url:
+            continue
+        try:
+            if datetime.fromisoformat(ts) < cutoff:
+                dropped += 1
+                continue
+        except ValueError:
+            pass   # 시각 파싱 실패 시 보수적으로 보존
+        kept[url] = ts
+    if dropped:
+        print(f"seen_urls 정리: {dropped}건 만료 ({SEEN_RETENTION_DAYS}일 경과)")
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted(u for u in seen if u)) + "\n")
+        f.write("\n".join(f"{u}\t{kept[u]}" for u in sorted(kept)) + "\n")
 
 
 # ── HTTP 세션 (텔레그램 + 네이버 공용) ──
@@ -117,7 +142,12 @@ def send_message(chat_id, text: str) -> bool:
         return False
 
     if not r.ok:
-        print(f"  전송 실패 → {chat_id}: HTTP {r.status_code} {r.text[:200]}")
+        if r.status_code == 403:
+            # 사용자가 봇을 차단한 경우. 구독자 목록 정리는 my_chat_member
+            # 업데이트를 받는 command_handler가 담당한다(소유권 분리 유지).
+            print(f"  전송 차단됨 → {chat_id}: 사용자가 봇을 차단 (403)")
+        else:
+            print(f"  전송 실패 → {chat_id}: HTTP {r.status_code} {r.text[:200]}")
         return False
     return True
 
@@ -127,11 +157,26 @@ def process_updates(data: dict):
     offset = data.get("offset", 0)
     chat_ids: list = data.get("chat_ids", [])
 
-    resp = tg_get("getUpdates", offset=offset, timeout=0)
+    # my_chat_member는 기본 수신 대상이 아니므로 명시적으로 요청해야 한다
+    resp = tg_get("getUpdates", offset=offset, timeout=0,
+                  allowed_updates=json.dumps(["message", "my_chat_member"]))
     updates = resp.get("result", [])
 
     for upd in updates:
         offset = upd["update_id"] + 1
+
+        # 사용자가 봇을 차단하면 status가 kicked로 바뀐 업데이트가 온다
+        member = upd.get("my_chat_member")
+        if member:
+            cid = member.get("chat", {}).get("id")
+            status = member.get("new_chat_member", {}).get("status")
+            if cid and status in ("kicked", "left") and cid in chat_ids:
+                chat_ids.remove(cid)
+                print(f"차단 감지 → 구독 자동 해제: {cid}")
+            elif cid and status == "member":
+                print(f"차단 해제 감지: {cid} (재구독은 /subscribe 필요)")
+            continue
+
         msg = upd.get("message", {})
         text = msg.get("text", "").strip()
         chat_id = msg.get("chat", {}).get("id")
@@ -269,7 +314,7 @@ def main():
         articles = fetch_naver_news()
         # dedup key 기준으로 이미 보낸 기사 제외
         new_articles = sorted(
-            [a for a in articles if not (a["keys"] & seen)],
+            [a for a in articles if not (a["keys"] & seen.keys())],
             key=lambda a: a["pub_dt"]
         )[:10]
         print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
@@ -287,7 +332,9 @@ def main():
                 # 한 명이라도 전송에 성공했을 때만 발송 완료로 기록
                 # (전원 실패 시 다음 실행에서 재시도)
                 if any(results) or not chat_ids:
-                    seen.update(article["keys"])
+                    stamp = datetime.now(KST).isoformat(timespec="seconds")
+                    for k in article["keys"]:
+                        seen[k] = stamp
                     print(f"  전송 {sum(results)}/{len(chat_ids)}: {article['title'][:40]}")
                 else:
                     print(f"  전송 전원 실패 (다음 실행 재시도): {article['title'][:40]}")
