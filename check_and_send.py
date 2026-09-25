@@ -66,21 +66,21 @@ def load_seen() -> set[str]:
 
 def save_seen(seen: set[str]):
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted(seen)))
+        f.write("\n".join(sorted(u for u in seen if u)) + "\n")
 
 
-# ── 텔레그램 ─────────────────────────────
-TG_TIMEOUT = (10, 30)   # (connect, read) 초
-TG_RETRIES = 4          # 최초 1회 + 재시도 4회 (backoff 2s→4s→8s→16s)
+# ── HTTP 세션 (텔레그램 + 네이버 공용) ──
+HTTP_TIMEOUT = (10, 30)   # (connect, read) 초
+HTTP_RETRIES = 4          # 최초 1회 + 재시도 4회 (backoff 2s→4s→8s→16s)
 
 
 def _make_session() -> requests.Session:
     """네트워크 일시 장애(ReadTimeout, 5xx, 429)에 자동 재시도하는 세션."""
     retry = Retry(
-        total=TG_RETRIES,
-        connect=TG_RETRIES,
-        read=TG_RETRIES,
-        status=TG_RETRIES,
+        total=HTTP_RETRIES,
+        connect=HTTP_RETRIES,
+        read=HTTP_RETRIES,
+        status=HTTP_RETRIES,
         backoff_factor=2,
         status_forcelist=[429, 500, 502, 503, 504],
         allowed_methods=frozenset(["GET", "POST"]),
@@ -96,8 +96,9 @@ def _make_session() -> requests.Session:
 SESSION = _make_session()
 
 
+# ── 텔레그램 ─────────────────────────────
 def tg_get(method: str, **params):
-    r = SESSION.get(f"{TGAPI}/{method}", params=params, timeout=TG_TIMEOUT)
+    r = SESSION.get(f"{TGAPI}/{method}", params=params, timeout=HTTP_TIMEOUT)
     r.raise_for_status()
     return r.json()
 
@@ -110,7 +111,7 @@ def send_message(chat_id, text: str) -> bool:
             "chat_id": chat_id,
             "text": text,
             "disable_web_page_preview": False,
-        }, timeout=TG_TIMEOUT)
+        }, timeout=HTTP_TIMEOUT)
     except requests.RequestException as e:
         print(f"  전송 실패 → {chat_id}: {type(e).__name__}: {e}")
         return False
@@ -195,20 +196,24 @@ def fetch_naver_news() -> list[dict]:
     seen_keys: set[str] = set()  # 이번 수집 내 중복 방지용
     for query in ["유인호 더불어민주당", "유인호 보람동", "유인호 세종시의회", "유인호 세종특별자치시의원"]:
         url = f"https://openapi.naver.com/v1/search/news.json?query={requests.utils.quote(query)}&display=20&sort=date"
-        resp = requests.get(url, headers=headers, timeout=15)
+        resp = SESSION.get(url, headers=headers, timeout=HTTP_TIMEOUT)
         resp.raise_for_status()
         for item in resp.json().get("items", []):
             title = html.unescape(re.sub(r"<[^>]+>", "", item.get("title", "")))
             # 표시용 URL: 원본 그대로 (쿼리파라미터 유지)
             display_url = item.get("originallink") or item.get("link", "")
             # dedup용 key: 트래킹 파라미터만 제거한 정규화 URL
-            key_link = normalize_url(item.get("link", ""))
-            key_orig = normalize_url(item.get("originallink", ""))
+            # originallink가 비어 있는 기사가 있어 빈 문자열은 key에서 제외
+            # (제외하지 않으면 두 번째 기사부터 중복으로 오판되어 누락됨)
+            keys = {k for k in (normalize_url(item.get("link", "")),
+                                normalize_url(item.get("originallink", ""))) if k}
             desc = html.unescape(re.sub(r"<[^>]+>", "", item.get("description", "")))
 
             # 날짜 파싱 실패 기사 제외
             try:
                 pub_dt = parsedate_to_datetime(item.get("pubDate", ""))
+                if pub_dt.tzinfo is None:          # 타임존 없는 응답 방어
+                    pub_dt = pub_dt.replace(tzinfo=KST)
                 date_str = pub_dt.strftime("%Y년 %m월 %d일 %H:%M")
             except Exception:
                 continue
@@ -218,18 +223,16 @@ def fetch_naver_news() -> list[dict]:
                 continue
 
             # 이번 수집 내 중복 제거
-            if key_link in seen_keys or key_orig in seen_keys:
+            if keys & seen_keys:
                 continue
             if not is_target_person(title + " " + desc):
                 continue
 
-            seen_keys.add(key_link)
-            seen_keys.add(key_orig)
+            seen_keys |= keys
             articles.append({
                 "title": title,
                 "url": display_url,       # 전송용 원본 URL
-                "key_link": key_link,     # seen_urls 저장용
-                "key_orig": key_orig,     # seen_urls 저장용
+                "keys": keys,             # seen_urls 저장/조회용
                 "summary": desc,
                 "date": date_str,
                 "pub_dt": pub_dt,         # 정렬용
@@ -266,7 +269,7 @@ def main():
         articles = fetch_naver_news()
         # dedup key 기준으로 이미 보낸 기사 제외
         new_articles = sorted(
-            [a for a in articles if a["key_link"] not in seen and a["key_orig"] not in seen],
+            [a for a in articles if not (a["keys"] & seen)],
             key=lambda a: a["pub_dt"]
         )[:10]
         print(f"수집 {len(articles)}건 / 신규 {len(new_articles)}건")
@@ -284,8 +287,7 @@ def main():
                 # 한 명이라도 전송에 성공했을 때만 발송 완료로 기록
                 # (전원 실패 시 다음 실행에서 재시도)
                 if any(results) or not chat_ids:
-                    seen.add(article["key_link"])
-                    seen.add(article["key_orig"])
+                    seen.update(article["keys"])
                     print(f"  전송 {sum(results)}/{len(chat_ids)}: {article['title'][:40]}")
                 else:
                     print(f"  전송 전원 실패 (다음 실행 재시도): {article['title'][:40]}")
