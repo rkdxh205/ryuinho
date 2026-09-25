@@ -7,9 +7,12 @@ from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 KST = timezone(timedelta(hours=9))
-RECENT_HOURS = 15  # 오후6시 → 다음날 오전8시(14h) + Actions 지연 여유 1h
+RECENT_HOURS = 24  # 오후6시 → 다음날 오전8시(14h) + Actions 지연 여유
+                   # (실측 지연 약 2h, 중복은 seen_urls로 차단되므로 넉넉히)
 
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
@@ -67,18 +70,55 @@ def save_seen(seen: set[str]):
 
 
 # ── 텔레그램 ─────────────────────────────
+TG_TIMEOUT = (10, 30)   # (connect, read) 초
+TG_RETRIES = 4          # 최초 1회 + 재시도 4회 (backoff 2s→4s→8s→16s)
+
+
+def _make_session() -> requests.Session:
+    """네트워크 일시 장애(ReadTimeout, 5xx, 429)에 자동 재시도하는 세션."""
+    retry = Retry(
+        total=TG_RETRIES,
+        connect=TG_RETRIES,
+        read=TG_RETRIES,
+        status=TG_RETRIES,
+        backoff_factor=2,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=frozenset(["GET", "POST"]),
+        raise_on_status=False,
+    )
+    s = requests.Session()
+    adapter = HTTPAdapter(max_retries=retry)
+    s.mount("https://", adapter)
+    s.mount("http://", adapter)
+    return s
+
+
+SESSION = _make_session()
+
+
 def tg_get(method: str, **params):
-    r = requests.get(f"{TGAPI}/{method}", params=params, timeout=15)
+    r = SESSION.get(f"{TGAPI}/{method}", params=params, timeout=TG_TIMEOUT)
     r.raise_for_status()
     return r.json()
 
 
-def send_message(chat_id, text: str):
-    requests.post(f"{TGAPI}/sendMessage", json={
-        "chat_id": chat_id,
-        "text": text,
-        "disable_web_page_preview": False,
-    }, timeout=15)
+def send_message(chat_id, text: str) -> bool:
+    """전송 성공 여부를 반환. 예외는 내부에서 흡수해
+    한 명에게 실패해도 나머지 전송과 seen_urls 저장이 계속되도록 한다."""
+    try:
+        r = SESSION.post(f"{TGAPI}/sendMessage", json={
+            "chat_id": chat_id,
+            "text": text,
+            "disable_web_page_preview": False,
+        }, timeout=TG_TIMEOUT)
+    except requests.RequestException as e:
+        print(f"  전송 실패 → {chat_id}: {type(e).__name__}: {e}")
+        return False
+
+    if not r.ok:
+        print(f"  전송 실패 → {chat_id}: HTTP {r.status_code} {r.text[:200]}")
+        return False
+    return True
 
 
 # ── 커맨드 처리 ──────────────────────────
@@ -239,11 +279,16 @@ def main():
             print("새 기사 없음 메시지 전송")
         else:
             for article in new_articles:
-                seen.add(article["key_link"])
-                seen.add(article["key_orig"])
-                for chat_id in chat_ids:
-                    send_message(chat_id, format_article(article))
-                    print(f"  전송 → {chat_id}: {article['title'][:40]}")
+                text = format_article(article)
+                results = [send_message(chat_id, text) for chat_id in chat_ids]
+                # 한 명이라도 전송에 성공했을 때만 발송 완료로 기록
+                # (전원 실패 시 다음 실행에서 재시도)
+                if any(results) or not chat_ids:
+                    seen.add(article["key_link"])
+                    seen.add(article["key_orig"])
+                    print(f"  전송 {sum(results)}/{len(chat_ids)}: {article['title'][:40]}")
+                else:
+                    print(f"  전송 전원 실패 (다음 실행 재시도): {article['title'][:40]}")
 
         save_seen(seen)
 
@@ -257,10 +302,7 @@ def main():
             f"{type(e).__name__}: {e}"
         )
         for chat_id in chat_ids:
-            try:
-                send_message(chat_id, err_text)
-            except Exception:
-                pass
+            send_message(chat_id, err_text)
 
 
 def commands_main():
