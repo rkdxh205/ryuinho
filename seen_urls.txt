@@ -103,6 +103,7 @@ https://n.news.naver.com/mnews/article/047/0002528068?sid=100	2026-09-25T23:28:3
 https://n.news.naver.com/mnews/article/047/0002528199?sid=100	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/047/0002530518?sid=100	2026-09-29T02:27:36+09:00
 https://n.news.naver.com/mnews/article/047/0002530613?sid=102	2026-09-30T00:29:15+09:00
+https://n.news.naver.com/mnews/article/047/0002530729?sid=100	2026-10-01T00:43:41+09:00
 https://n.news.naver.com/mnews/article/056/0012205913?sid=100	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/079/0004161314?sid=102	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/079/0004173868?sid=102	2026-09-25T23:28:38+09:00
@@ -131,6 +132,7 @@ https://news.skbroadband.com/news/articleView.html?idxno=230915	2026-09-25T23:28
 https://news.skbroadband.com/news/articleView.html?idxno=230996	2026-09-25T23:28:38+09:00
 https://news.skbroadband.com/news/articleView.html?idxno=232968	2026-09-25T23:28:38+09:00
 https://news.skbroadband.com/news/articleView.html?idxno=236939	2026-09-25T23:28:38+09:00
+https://news.skbroadband.com/news/articleView.html?idxno=239016	2026-10-01T00:43:41+09:00
 https://news.tf.co.kr/read/national/2333643.htm	2026-09-25T23:28:38+09:00
 https://news.tf.co.kr/read/national/2336054.htm	2026-09-25T23:28:38+09:00
 https://news.tf.co.kr/read/national/2338704.htm	2026-09-25T23:28:38+09:00
@@ -314,6 +316,7 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265308&CMPT_CD=P00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265597&CMPT_CD=P0010	2026-09-25T23:28:38+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271001&CMPT_CD=P0010	2026-09-29T02:27:36+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271201&CMPT_CD=P0010	2026-09-30T00:29:15+09:00
+https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271367&CMPT_CD=P0010	2026-10-01T00:43:41+09:00
 https://www.pressian.com/pages/articles/2026091612233814938	2026-09-25T23:28:38+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=378426	2026-09-25T23:28:38+09:00
 https://www.sjsori.com/news/articleView.html?idxno=86744	2026-09-25T23:28:38+09:00
