@@ -2,6 +2,7 @@ http://www.amnews.co.kr/news/articleView.html?idxno=74585	2026-09-25T23:28:38+09
 http://www.breaknews.com/1231869	2026-09-25T23:28:38+09:00
 http://www.breaknews.com/1234785	2026-09-25T23:28:38+09:00
 http://www.breaknews.com/1239758	2026-09-30T10:52:23+09:00
+http://www.breaknews.com/1241858	2026-10-09T01:11:32+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=410900	2026-09-25T23:28:38+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=410938	2026-09-25T23:28:38+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=411141	2026-09-25T23:28:38+09:00
@@ -91,6 +92,7 @@ https://n.news.naver.com/mnews/article/003/0014042880?sid=102	2026-09-25T23:28:3
 https://n.news.naver.com/mnews/article/003/0014088233?sid=102	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/003/0014218733?sid=102	2026-09-29T11:30:07+09:00
 https://n.news.naver.com/mnews/article/003/0014229104?sid=102	2026-10-02T11:02:33+09:00
+https://n.news.naver.com/mnews/article/003/0014242559?sid=102	2026-10-09T01:11:31+09:00
 https://n.news.naver.com/mnews/article/009/0005702500?sid=102	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/014/0005576518?sid=102	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/016/0002697967?sid=101	2026-09-25T23:28:38+09:00
@@ -261,6 +263,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3697482	2026-09-25T23:28:3
 https://www.gukjenews.com/news/articleView.html?idxno=3707088	2026-09-29T02:27:35+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3707100	2026-09-29T11:30:11+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3708019	2026-09-30T00:29:15+09:00
+https://www.gukjenews.com/news/articleView.html?idxno=3716833	2026-10-09T01:11:32+09:00
 https://www.inews365.com/news/article.html?no=925808	2026-09-25T23:28:38+09:00
 https://www.inews365.com/news/article.html?no=926201	2026-09-25T23:28:38+09:00
 https://www.inews365.com/news/article.html?no=929177	2026-09-25T23:28:38+09:00
@@ -309,6 +312,7 @@ https://www.newsis.com/view/NISX20260702_0003693322	2026-09-25T23:28:38+09:00
 https://www.newsis.com/view/NISX20260726_0003723385	2026-09-25T23:28:38+09:00
 https://www.newsis.com/view/NISX20260928_0003805884	2026-09-29T11:30:07+09:00
 https://www.newsis.com/view/NISX20261002_0003811915	2026-10-02T11:02:33+09:00
+https://www.newsis.com/view/NISX20261008_0003819530	2026-10-09T01:11:31+09:00
 https://www.newspim.com/news/view/20260825001111	2026-09-25T23:28:38+09:00
 https://www.newspim.com/news/view/20260827001184	2026-09-25T23:28:38+09:00
 https://www.newspim.com/news/view/20260907001110	2026-09-25T23:28:38+09:00
@@ -316,6 +320,7 @@ https://www.newspim.com/news/view/20260928000969	2026-09-29T02:27:37+09:00
 https://www.newspim.com/news/view/20260929000647	2026-09-30T00:29:16+09:00
 https://www.newstnt.com/news/articleView.html?idxno=715072	2026-09-25T23:28:38+09:00
 https://www.newstnt.com/news/articleView.html?idxno=716238	2026-09-25T23:28:38+09:00
+https://www.newstnt.com/news/articleView.html?idxno=722137	2026-10-09T01:11:33+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=500561	2026-09-25T23:28:38+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=500562	2026-09-25T23:28:38+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=501503	2026-09-25T23:28:38+09:00
@@ -325,6 +330,7 @@ https://www.newsworker.co.kr/news/articleView.html?idxno=502984	2026-09-25T23:28
 https://www.newsworker.co.kr/news/articleView.html?idxno=503228	2026-09-25T23:28:38+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=505663	2026-09-25T23:28:38+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=507108	2026-10-03T00:31:07+09:00
+https://www.newsworker.co.kr/news/articleView.html?idxno=507834	2026-10-09T01:11:31+09:00
 https://www.ngonews.kr/news/articleView.html?idxno=236277	2026-09-25T23:28:38+09:00
 https://www.nocutnews.co.kr/news/6538013	2026-09-25T23:28:38+09:00
 https://www.nocutnews.co.kr/news/6555903	2026-09-25T23:28:38+09:00
