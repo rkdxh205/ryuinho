@@ -210,6 +210,8 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2443160	2026-09-28T10:26
 https://www.ccdailynews.com/news/articleView.html?idxno=2443651	2026-09-30T00:29:21+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2444436	2026-10-03T00:31:07+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2446235	2026-10-14T23:23:52+09:00
+https://www.ccdailynews.com/news/articleView.html?idxno=2446670	2026-10-17T10:08:21+09:00
+https://www.ccdailynews.com/news/articleView.html?idxno=2446677	2026-10-17T10:08:22+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1086539	2026-09-25T23:28:38+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1090067	2026-09-25T23:28:38+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1096685	2026-09-25T23:28:38+09:00
@@ -285,6 +287,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3708019	2026-09-30T00:29:1
 https://www.gukjenews.com/news/articleView.html?idxno=3716833	2026-10-09T01:11:32+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3721117	2026-10-14T23:23:52+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3723217	2026-10-16T10:01:27+09:00
+https://www.gukjenews.com/news/articleView.html?idxno=3724138	2026-10-17T10:08:22+09:00
 https://www.inews365.com/news/article.html?no=925808	2026-09-25T23:28:38+09:00
 https://www.inews365.com/news/article.html?no=926201	2026-09-25T23:28:38+09:00
 https://www.inews365.com/news/article.html?no=929177	2026-09-25T23:28:38+09:00
@@ -411,6 +414,8 @@ https://www.viva100.com/article/20260830500652	2026-09-25T23:28:38+09:00
 https://www.viva100.com/article/20260909500069	2026-09-25T23:28:38+09:00
 https://www.viva100.com/article/20261005500625	2026-10-06T11:43:54+09:00
 https://www.viva100.com/article/20261015501066	2026-10-15T23:01:15+09:00
+https://www.viva100.com/article/20261017500046	2026-10-17T10:08:23+09:00
+https://www.viva100.com/article/20261017500056	2026-10-17T10:08:24+09:00
 https://www.wikitree.co.kr/articles/1154891	2026-09-25T23:28:38+09:00
 https://www.wikitree.co.kr/articles/1155646	2026-09-25T23:28:38+09:00
 https://www.wikitree.co.kr/articles/1158166	2026-09-25T23:28:38+09:00
