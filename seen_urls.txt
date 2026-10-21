@@ -135,6 +135,7 @@ https://n.news.naver.com/mnews/article/047/0002530729?sid=100	2026-10-01T00:43:4
 https://n.news.naver.com/mnews/article/047/0002530975?sid=102	2026-10-02T11:02:34+09:00
 https://n.news.naver.com/mnews/article/047/0002532521?sid=102	2026-10-17T21:45:39+09:00
 https://n.news.naver.com/mnews/article/047/0002532663?sid=102	2026-10-20T01:17:34+09:00
+https://n.news.naver.com/mnews/article/047/0002532995?sid=100	2026-10-21T23:23:13+09:00
 https://n.news.naver.com/mnews/article/056/0012205913?sid=100	2026-09-25T23:28:38+09:00
 https://n.news.naver.com/mnews/article/056/0012267232?sid=102	2026-10-03T00:31:08+09:00
 https://n.news.naver.com/mnews/article/079/0004161314?sid=102	2026-09-25T23:28:38+09:00
@@ -200,6 +201,7 @@ https://www.aflnews.co.kr/news/articleView.html?idxno=329179	2026-10-03T00:31:05
 https://www.aflnews.co.kr/news/articleView.html?idxno=329830	2026-10-16T22:48:13+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330057	2026-10-21T10:22:03+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330058	2026-10-21T10:22:03+09:00
+https://www.aflnews.co.kr/news/articleView.html?idxno=330118	2026-10-21T23:23:13+09:00
 https://www.ajunews.com/view/20260916142339514	2026-09-25T23:28:38+09:00
 https://www.apnews.kr/news/articleView.html?idxno=3049662	2026-09-25T23:28:38+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=819471	2026-09-25T23:28:38+09:00
@@ -415,6 +417,7 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271367&CMPT_CD=P00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003272043&CMPT_CD=P0010	2026-10-02T11:02:34+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276127&CMPT_CD=P0010	2026-10-17T21:45:39+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276485&CMPT_CD=P0010	2026-10-20T01:17:34+09:00
+https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277322&CMPT_CD=P0010	2026-10-21T23:23:13+09:00
 https://www.pressian.com/pages/articles/2026091612233814938	2026-09-25T23:28:38+09:00
 https://www.sentv.co.kr/article/view/sentv202610140093	2026-10-14T23:23:55+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=378426	2026-09-25T23:28:38+09:00
