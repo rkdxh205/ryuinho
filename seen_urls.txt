@@ -17,6 +17,7 @@ http://www.ccnnews.co.kr/news/articleView.html?idxno=416723	2026-10-24T10:23:39+
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416738	2026-10-25T22:36:37+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416801	2026-10-27T00:56:46+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416803	2026-10-27T00:56:45+09:00
+http://www.ccnnews.co.kr/news/articleView.html?idxno=416866	2026-10-28T00:12:04+09:00
 http://www.cctimes.kr/news/articleView.html?idxno=931256	2026-10-12T00:25:20+09:00
 http://www.cctimes.kr/news/articleView.html?idxno=933502	2026-10-22T23:24:19+09:00
 http://www.chungnamilbo.co.kr/news/articleView.html?idxno=914650	2026-10-14T23:23:54+09:00
@@ -40,6 +41,7 @@ https://daily.hankooki.com/news/articleView.html?idxno=1415284	2026-10-15T23:01:
 https://daily.hankooki.com/news/articleView.html?idxno=1415786	2026-10-16T22:48:13+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1416034	2026-10-20T01:17:31+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1416549	2026-10-20T23:10:41+09:00
+https://daily.hankooki.com/news/articleView.html?idxno=1418941	2026-10-28T00:12:03+09:00
 https://n.news.naver.com/mnews/article/003/0014218733?sid=102	2026-09-29T11:30:07+09:00
 https://n.news.naver.com/mnews/article/003/0014229104?sid=102	2026-10-02T11:02:33+09:00
 https://n.news.naver.com/mnews/article/003/0014242559?sid=102	2026-10-09T01:11:31+09:00
@@ -53,10 +55,12 @@ https://n.news.naver.com/mnews/article/047/0002530975?sid=102	2026-10-02T11:02:3
 https://n.news.naver.com/mnews/article/047/0002532521?sid=102	2026-10-17T21:45:39+09:00
 https://n.news.naver.com/mnews/article/047/0002532663?sid=102	2026-10-20T01:17:34+09:00
 https://n.news.naver.com/mnews/article/047/0002532995?sid=100	2026-10-21T23:23:13+09:00
+https://n.news.naver.com/mnews/article/047/0002533701?sid=100	2026-10-28T00:12:03+09:00
 https://n.news.naver.com/mnews/article/056/0012267232?sid=102	2026-10-03T00:31:08+09:00
 https://n.news.naver.com/mnews/article/079/0004193673?sid=102	2026-09-29T11:30:12+09:00
 https://n.news.naver.com/mnews/article/079/0004195028?sid=102	2026-10-02T11:02:32+09:00
 https://n.news.naver.com/mnews/article/586/0000140388?sid=102	2026-10-20T10:37:13+09:00
+https://n.news.naver.com/mnews/article/586/0000140939?sid=102	2026-10-28T00:11:57+09:00
 https://n.news.naver.com/mnews/article/629/0000537373?sid=102	2026-09-29T02:27:35+09:00
 https://n.news.naver.com/mnews/article/629/0000537570?sid=102	2026-09-29T11:30:13+09:00
 https://n.news.naver.com/mnews/article/629/0000537826?sid=102	2026-09-30T10:52:23+09:00
@@ -85,6 +89,7 @@ https://www.aflnews.co.kr/news/articleView.html?idxno=330058	2026-10-21T10:22:03
 https://www.aflnews.co.kr/news/articleView.html?idxno=330118	2026-10-21T23:23:13+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330224	2026-10-23T23:06:55+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330242	2026-10-23T23:06:56+09:00
+https://www.aflnews.co.kr/news/articleView.html?idxno=330507	2026-10-28T00:12:01+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=823953	2026-10-16T22:48:15+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=824242	2026-10-22T23:24:20+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2443160	2026-09-28T10:26:29+09:00
@@ -103,6 +108,7 @@ https://www.ccreview.co.kr/news/articleView.html?idxno=359954	2026-10-15T23:01:1
 https://www.ccreview.co.kr/news/articleView.html?idxno=360301	2026-10-20T10:37:15+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360333	2026-10-21T10:22:02+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360712	2026-10-23T10:18:01+09:00
+https://www.ccreview.co.kr/news/articleView.html?idxno=360958	2026-10-28T00:11:59+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2304077	2026-09-30T00:29:18+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2304121	2026-09-30T10:52:24+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2304727	2026-10-02T11:02:34+09:00
@@ -112,6 +118,7 @@ https://www.dynews.co.kr/news/articleView.html?idxno=867467	2026-09-29T02:27:31+
 https://www.dynews.co.kr/news/articleView.html?idxno=869820	2026-10-18T22:03:58+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=869821	2026-10-18T22:03:58+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=870794	2026-10-25T22:36:38+09:00
+https://www.dynews.co.kr/news/articleView.html?idxno=871247	2026-10-28T00:11:58+09:00
 https://www.ekn.kr/web/view.php?key=20260928021429616	2026-09-29T11:30:09+09:00
 https://www.ekn.kr/web/view.php?key=20260929022480024	2026-09-30T00:29:20+09:00
 https://www.ekn.kr/web/view.php?key=20261019029498058	2026-10-20T01:17:37+09:00
@@ -158,6 +165,7 @@ https://www.newspim.com/news/view/20261014001293	2026-10-14T23:23:58+09:00
 https://www.newspim.com/news/view/20261016001062	2026-10-16T22:48:12+09:00
 https://www.newspim.com/news/view/20261020000423	2026-10-20T23:10:36+09:00
 https://www.newspim.com/news/view/20261026001202	2026-10-27T00:56:44+09:00
+https://www.newspim.com/news/view/20261027001157	2026-10-28T00:12:02+09:00
 https://www.newstnt.com/news/articleView.html?idxno=722137	2026-10-09T01:11:33+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=507108	2026-10-03T00:31:07+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=507834	2026-10-09T01:11:31+09:00
@@ -168,6 +176,7 @@ https://www.newsworker.co.kr/news/articleView.html?idxno=509278	2026-10-20T01:17
 https://www.newsworker.co.kr/news/articleView.html?idxno=509485	2026-10-20T23:10:38+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=510078	2026-10-22T23:24:18+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=510588	2026-10-27T00:56:44+09:00
+https://www.newsworker.co.kr/news/articleView.html?idxno=510776	2026-10-28T00:12:01+09:00
 https://www.nocutnews.co.kr/news/6584276	2026-09-29T11:30:12+09:00
 https://www.nocutnews.co.kr/news/6586230	2026-10-02T11:02:32+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271001&CMPT_CD=P0010	2026-09-29T02:27:36+09:00
@@ -177,8 +186,10 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003272043&CMPT_CD=P00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276127&CMPT_CD=P0010	2026-10-17T21:45:39+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276485&CMPT_CD=P0010	2026-10-20T01:17:34+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277322&CMPT_CD=P0010	2026-10-21T23:23:13+09:00
+https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003279344&CMPT_CD=P0010	2026-10-28T00:12:03+09:00
 https://www.sentv.co.kr/article/view/sentv202610140093	2026-10-14T23:23:55+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=390809	2026-10-20T10:37:13+09:00
+https://www.sisajournal.com/news/articleView.html?idxno=391756	2026-10-28T00:11:57+09:00
 https://www.tournews21.com/news/articleView.html?idxno=144567	2026-09-30T10:52:26+09:00
 https://www.tournews21.com/news/articleView.html?idxno=145088	2026-10-07T11:09:06+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146144	2026-10-20T10:37:13+09:00
@@ -190,4 +201,5 @@ https://www.viva100.com/article/20261017500046	2026-10-17T10:08:23+09:00
 https://www.viva100.com/article/20261017500056	2026-10-17T10:08:24+09:00
 https://www.viva100.com/article/20261019500408	2026-10-20T01:17:32+09:00
 https://www.viva100.com/article/20261023500081	2026-10-23T10:18:02+09:00
+https://www.viva100.com/article/20261027500797	2026-10-28T00:12:00+09:00
 https://www.wikitree.co.kr/articles/1166510	2026-10-15T23:01:15+09:00
