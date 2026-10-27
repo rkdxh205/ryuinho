@@ -134,6 +134,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3726568	2026-10-20T23:10:3
 https://www.gukjenews.com/news/articleView.html?idxno=3726613	2026-10-20T23:10:37+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3730350	2026-10-23T10:18:00+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3731186	2026-10-23T23:06:58+09:00
+https://www.gukjenews.com/news/articleView.html?idxno=3733629	2026-10-27T10:51:05+09:00
 https://www.inews365.com/news/article.html?no=937350	2026-09-29T02:27:34+09:00
 https://www.inews365.com/news/article.html?no=937992	2026-10-06T03:06:13+09:00
 https://www.inews365.com/news/article.html?no=939968	2026-10-20T23:10:40+09:00
@@ -144,6 +145,7 @@ https://www.joongdo.co.kr/web/view.php?key=20261002010000545	2026-10-03T00:31:04
 https://www.joongdo.co.kr/web/view.php?key=20261002010000615	2026-10-03T00:31:06+09:00
 https://www.khan.co.kr/article/202610061108001	2026-10-06T11:43:55+09:00
 https://www.kukinews.com/article/view/kuk202609280173	2026-09-29T02:27:32+09:00
+https://www.kukinews.com/article/view/kuk202610270030	2026-10-27T10:51:06+09:00
 https://www.m-i.kr/news/articleView.html?idxno=2007658	2026-10-20T01:17:38+09:00
 https://www.m-i.kr/news/articleView.html?idxno=2008153	2026-10-20T23:10:41+09:00
 https://www.munhwa.com/article/11621161	2026-10-03T00:31:04+09:00
