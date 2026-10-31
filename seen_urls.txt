@@ -121,6 +121,7 @@ https://www.kukinews.com/article/view/kuk202610300174	2026-10-31T00:41:06+09:00
 https://www.m-i.kr/news/articleView.html?idxno=2007658	2026-10-20T01:17:38+09:00
 https://www.m-i.kr/news/articleView.html?idxno=2008153	2026-10-20T23:10:41+09:00
 https://www.munhwa.com/article/11621161	2026-10-03T00:31:04+09:00
+https://www.newscj.com/news/articleView.html?idxno=3444730	2026-11-01T00:10:03+09:00
 https://www.newsis.com/view/NISX20261002_0003811915	2026-10-02T11:02:33+09:00
 https://www.newsis.com/view/NISX20261008_0003819530	2026-10-09T01:11:31+09:00
 https://www.newspim.com/news/view/20261014001293	2026-10-14T23:23:58+09:00
@@ -129,6 +130,7 @@ https://www.newspim.com/news/view/20261020000423	2026-10-20T23:10:36+09:00
 https://www.newspim.com/news/view/20261026001202	2026-10-27T00:56:44+09:00
 https://www.newspim.com/news/view/20261027001157	2026-10-28T00:12:02+09:00
 https://www.newstnt.com/news/articleView.html?idxno=722137	2026-10-09T01:11:33+09:00
+https://www.newstnt.com/news/articleView.html?idxno=726058	2026-11-01T00:10:04+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=507108	2026-10-03T00:31:07+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=507834	2026-10-09T01:11:31+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=508671	2026-10-14T23:23:58+09:00
