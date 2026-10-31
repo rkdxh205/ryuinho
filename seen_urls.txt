@@ -40,7 +40,6 @@ https://n.news.naver.com/mnews/article/011/0004676004?sid=102	2026-10-28T11:02:5
 https://n.news.naver.com/mnews/article/021/0002822829?sid=102	2026-10-03T00:31:04+09:00
 https://n.news.naver.com/mnews/article/029/0003051774?sid=110	2026-10-07T00:45:03+09:00
 https://n.news.naver.com/mnews/article/032/0003474452?sid=100	2026-10-06T11:43:55+09:00
-https://n.news.naver.com/mnews/article/047/0002530729?sid=100	2026-10-01T00:43:41+09:00
 https://n.news.naver.com/mnews/article/047/0002530975?sid=102	2026-10-02T11:02:34+09:00
 https://n.news.naver.com/mnews/article/047/0002532521?sid=102	2026-10-17T21:45:39+09:00
 https://n.news.naver.com/mnews/article/047/0002532663?sid=102	2026-10-20T01:17:34+09:00
@@ -55,7 +54,6 @@ https://n.news.naver.com/mnews/article/656/0000188392?sid=102	2026-10-02T11:02:3
 https://n.news.naver.com/mnews/article/656/0000190402?sid=102	2026-10-23T23:06:54+09:00
 https://n.news.naver.com/mnews/article/656/0000190800?sid=100	2026-10-29T00:47:38+09:00
 https://news.kbs.co.kr/news/pc/view/view.do?ncd=8676884	2026-10-03T00:31:08+09:00
-https://news.skbroadband.com/news/articleView.html?idxno=239016	2026-10-01T00:43:41+09:00
 https://news.tf.co.kr/read/national/2376166.htm	2026-10-14T23:23:55+09:00
 https://weekly.hankooki.com/news/articleView.html?idxno=7188838	2026-10-14T23:23:53+09:00
 https://weekly.hankooki.com/news/articleView.html?idxno=7189745	2026-10-20T10:37:14+09:00
@@ -143,7 +141,6 @@ https://www.newsworker.co.kr/news/articleView.html?idxno=510588	2026-10-27T00:56
 https://www.newsworker.co.kr/news/articleView.html?idxno=510776	2026-10-28T00:12:01+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=511557	2026-10-31T00:41:04+09:00
 https://www.nocutnews.co.kr/news/6586230	2026-10-02T11:02:32+09:00
-https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271367&CMPT_CD=P0010	2026-10-01T00:43:41+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003272043&CMPT_CD=P0010	2026-10-02T11:02:34+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276127&CMPT_CD=P0010	2026-10-17T21:45:39+09:00
 https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276485&CMPT_CD=P0010	2026-10-20T01:17:34+09:00
