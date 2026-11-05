@@ -35,7 +35,6 @@ https://daily.hankooki.com/news/articleView.html?idxno=1416549	2026-10-20T23:10:
 https://daily.hankooki.com/news/articleView.html?idxno=1418941	2026-10-28T00:12:03+09:00
 https://n.news.naver.com/mnews/article/003/0014242559?sid=102	2026-10-09T01:11:31+09:00
 https://n.news.naver.com/mnews/article/011/0004676004?sid=102	2026-10-28T11:02:51+09:00
-https://n.news.naver.com/mnews/article/029/0003051774?sid=110	2026-10-07T00:45:03+09:00
 https://n.news.naver.com/mnews/article/047/0002532521?sid=102	2026-10-17T21:45:39+09:00
 https://n.news.naver.com/mnews/article/047/0002532663?sid=102	2026-10-20T01:17:34+09:00
 https://n.news.naver.com/mnews/article/047/0002532995?sid=100	2026-10-21T23:23:13+09:00
@@ -77,7 +76,6 @@ https://www.ccreview.co.kr/news/articleView.html?idxno=361105	2026-10-28T11:02:5
 https://www.cctoday.co.kr/news/articleView.html?idxno=2239583	2026-11-04T01:52:44+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2308943	2026-10-23T23:06:54+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2309916	2026-10-29T00:47:38+09:00
-https://www.dt.co.kr/article/12087754	2026-10-07T00:45:03+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=869820	2026-10-18T22:03:58+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=869821	2026-10-18T22:03:58+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=870794	2026-10-25T22:36:38+09:00
