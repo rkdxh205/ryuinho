@@ -60,6 +60,7 @@ https://www.aflnews.co.kr/news/articleView.html?idxno=330224	2026-10-23T23:06:55
 https://www.aflnews.co.kr/news/articleView.html?idxno=330242	2026-10-23T23:06:56+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330507	2026-10-28T00:12:01+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=331292	2026-11-10T04:36:46+09:00
+https://www.aflnews.co.kr/news/articleView.html?idxno=331497	2026-11-12T12:38:52+09:00
 https://www.asiatime.co.kr/article/20261028500212	2026-10-29T00:47:36+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=823953	2026-10-16T22:48:15+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=824242	2026-10-22T23:24:20+09:00
@@ -69,6 +70,7 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2446670	2026-10-17T10:08
 https://www.ccdailynews.com/news/articleView.html?idxno=2446677	2026-10-17T10:08:22+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2447136	2026-10-20T23:10:39+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2448127	2026-10-27T00:56:43+09:00
+https://www.ccdailynews.com/news/articleView.html?idxno=2450919	2026-11-12T12:38:51+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1104761	2026-10-14T23:23:56+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1105247	2026-10-18T22:03:57+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1105576	2026-10-20T01:17:36+09:00
@@ -79,6 +81,7 @@ https://www.ccreview.co.kr/news/articleView.html?idxno=360333	2026-10-21T10:22:0
 https://www.ccreview.co.kr/news/articleView.html?idxno=360712	2026-10-23T10:18:01+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360958	2026-10-28T00:11:59+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=361105	2026-10-28T11:02:50+09:00
+https://www.ccreview.co.kr/news/articleView.html?idxno=362489	2026-11-12T12:38:53+09:00
 https://www.cctoday.co.kr/news/articleView.html?idxno=2239583	2026-11-04T01:52:44+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2308943	2026-10-23T23:06:54+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2309916	2026-10-29T00:47:38+09:00
@@ -88,6 +91,7 @@ https://www.dynews.co.kr/news/articleView.html?idxno=869821	2026-10-18T22:03:58+
 https://www.dynews.co.kr/news/articleView.html?idxno=870794	2026-10-25T22:36:38+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=871247	2026-10-28T00:11:58+09:00
 https://www.ekn.kr/web/view.php?key=20261019029498058	2026-10-20T01:17:37+09:00
+https://www.ekn.kr/web/view.php?key=20261112027258408	2026-11-12T12:38:52+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455441	2026-11-10T04:36:46+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455647	2026-11-12T01:57:27+09:00
 https://www.greened.kr/news/articleView.html?idxno=354318	2026-11-11T01:51:41+09:00
@@ -145,6 +149,7 @@ https://www.sisajournal.com/news/articleView.html?idxno=391756	2026-10-28T00:11:
 https://www.tournews21.com/news/articleView.html?idxno=146144	2026-10-20T10:37:13+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146460	2026-10-23T10:17:59+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146624	2026-10-26T10:01:13+09:00
+https://www.tournews21.com/news/articleView.html?idxno=148206	2026-11-12T12:38:51+09:00
 https://www.viva100.com/article/20261015501066	2026-10-15T23:01:15+09:00
 https://www.viva100.com/article/20261017500046	2026-10-17T10:08:23+09:00
 https://www.viva100.com/article/20261017500056	2026-10-17T10:08:24+09:00
