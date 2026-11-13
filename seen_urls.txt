@@ -29,6 +29,7 @@ http://www.chungnamilbo.co.kr/news/articleView.html?idxno=920063	2026-11-11T11:3
 http://www.dtnews24.com/news/articleView.html?idxno=817055	2026-11-11T01:51:40+09:00
 http://www.dtnews24.com/news/articleView.html?idxno=817109	2026-11-12T01:57:26+09:00
 http://www.newsprime.co.kr/news/article.html?no=752071	2026-10-22T23:24:18+09:00
+https://cc.newdaily.co.kr/site/data/html/2026/11/13/2026111300010.html	2026-11-13T12:13:20+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1414811	2026-10-14T23:23:57+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1415284	2026-10-15T23:01:16+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1415786	2026-10-16T22:48:13+09:00
@@ -45,6 +46,7 @@ https://n.news.naver.com/mnews/article/047/0002533701?sid=100	2026-10-28T00:12:0
 https://n.news.naver.com/mnews/article/584/0000040096?sid=105	2026-11-11T11:34:03+09:00
 https://n.news.naver.com/mnews/article/586/0000140388?sid=102	2026-10-20T10:37:13+09:00
 https://n.news.naver.com/mnews/article/586/0000140939?sid=102	2026-10-28T00:11:57+09:00
+https://n.news.naver.com/mnews/article/586/0000142190?sid=102	2026-11-13T12:13:20+09:00
 https://n.news.naver.com/mnews/article/629/0000541963?sid=102	2026-10-14T23:23:55+09:00
 https://n.news.naver.com/mnews/article/656/0000190402?sid=102	2026-10-23T23:06:54+09:00
 https://n.news.naver.com/mnews/article/656/0000190800?sid=100	2026-10-29T00:47:38+09:00
@@ -147,6 +149,7 @@ https://www.sedaily.com/article/20107072	2026-10-28T11:02:51+09:00
 https://www.sentv.co.kr/article/view/sentv202610140093	2026-10-14T23:23:55+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=390809	2026-10-20T10:37:13+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=391756	2026-10-28T00:11:57+09:00
+https://www.sisajournal.com/news/articleView.html?idxno=393835	2026-11-13T12:13:20+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146144	2026-10-20T10:37:13+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146460	2026-10-23T10:17:59+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146624	2026-10-26T10:01:13+09:00
