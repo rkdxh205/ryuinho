@@ -27,7 +27,6 @@ http://www.dtnews24.com/news/articleView.html?idxno=817055	2026-11-11T01:51:40+0
 http://www.dtnews24.com/news/articleView.html?idxno=817109	2026-11-12T01:57:26+09:00
 http://www.newsprime.co.kr/news/article.html?no=752071	2026-10-22T23:24:18+09:00
 https://cc.newdaily.co.kr/site/data/html/2026/11/13/2026111300010.html	2026-11-13T12:13:20+09:00
-https://daily.hankooki.com/news/articleView.html?idxno=1415284	2026-10-15T23:01:16+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1415786	2026-10-16T22:48:13+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1416034	2026-10-20T01:17:31+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1416549	2026-10-20T23:10:41+09:00
@@ -68,7 +67,6 @@ https://www.ccdailynews.com/news/articleView.html?idxno=2450919	2026-11-12T12:38
 https://www.ccdn.co.kr/news/articleView.html?idxno=1105247	2026-10-18T22:03:57+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1105576	2026-10-20T01:17:36+09:00
 https://www.ccdn.co.kr/news/articleView.html?idxno=1105847	2026-10-20T23:10:42+09:00
-https://www.ccreview.co.kr/news/articleView.html?idxno=359954	2026-10-15T23:01:17+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360301	2026-10-20T10:37:15+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360333	2026-10-21T10:22:02+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360712	2026-10-23T10:18:01+09:00
@@ -120,7 +118,6 @@ https://www.newspim.com/news/view/20261026001202	2026-10-27T00:56:44+09:00
 https://www.newspim.com/news/view/20261027001157	2026-10-28T00:12:02+09:00
 https://www.newspim.com/news/view/20261111000843	2026-11-12T01:57:24+09:00
 https://www.newstnt.com/news/articleView.html?idxno=726058	2026-11-01T00:10:04+09:00
-https://www.newsworker.co.kr/news/articleView.html?idxno=508782	2026-10-15T23:01:14+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=509073	2026-10-16T22:48:14+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=509278	2026-10-20T01:17:37+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=509485	2026-10-20T23:10:38+09:00
@@ -141,10 +138,8 @@ https://www.tournews21.com/news/articleView.html?idxno=146144	2026-10-20T10:37:1
 https://www.tournews21.com/news/articleView.html?idxno=146460	2026-10-23T10:17:59+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146624	2026-10-26T10:01:13+09:00
 https://www.tournews21.com/news/articleView.html?idxno=148206	2026-11-12T12:38:51+09:00
-https://www.viva100.com/article/20261015501066	2026-10-15T23:01:15+09:00
 https://www.viva100.com/article/20261017500046	2026-10-17T10:08:23+09:00
 https://www.viva100.com/article/20261017500056	2026-10-17T10:08:24+09:00
 https://www.viva100.com/article/20261019500408	2026-10-20T01:17:32+09:00
 https://www.viva100.com/article/20261023500081	2026-10-23T10:18:02+09:00
 https://www.viva100.com/article/20261027500797	2026-10-28T00:12:00+09:00
-https://www.wikitree.co.kr/articles/1166510	2026-10-15T23:01:15+09:00
