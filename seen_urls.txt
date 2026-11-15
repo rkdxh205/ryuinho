@@ -1,5 +1,4 @@
 http://www.breaknews.com/1245117	2026-10-23T10:18:00+09:00
-http://www.ccnnews.co.kr/news/articleView.html?idxno=416309	2026-10-16T10:01:27+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416381	2026-10-18T09:41:34+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416403	2026-10-20T01:17:33+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416524	2026-10-21T10:22:04+09:00
@@ -87,7 +86,6 @@ https://www.ekn.kr/web/view.php?key=20261112027258408	2026-11-12T12:38:52+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455441	2026-11-10T04:36:46+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455647	2026-11-12T01:57:27+09:00
 https://www.greened.kr/news/articleView.html?idxno=354318	2026-11-11T01:51:41+09:00
-https://www.gukjenews.com/news/articleView.html?idxno=3723217	2026-10-16T10:01:27+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3724138	2026-10-17T10:08:22+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3725761	2026-10-20T01:17:35+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3726568	2026-10-20T23:10:36+09:00
