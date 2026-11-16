@@ -55,8 +55,6 @@ https://www.aflnews.co.kr/news/articleView.html?idxno=331497	2026-11-12T12:38:52
 https://www.asiatime.co.kr/article/20261028500212	2026-10-29T00:47:36+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=824242	2026-10-22T23:24:20+09:00
 https://www.bzeronews.com/news/articleView.html?idxno=825139	2026-11-11T01:51:41+09:00
-https://www.ccdailynews.com/news/articleView.html?idxno=2446670	2026-10-17T10:08:21+09:00
-https://www.ccdailynews.com/news/articleView.html?idxno=2446677	2026-10-17T10:08:22+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2447136	2026-10-20T23:10:39+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2448127	2026-10-27T00:56:43+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2450919	2026-11-12T12:38:51+09:00
@@ -80,10 +78,10 @@ https://www.dynews.co.kr/news/articleView.html?idxno=871247	2026-10-28T00:11:58+
 https://www.dynews.co.kr/news/articleView.html?idxno=873768	2026-11-13T02:25:51+09:00
 https://www.ekn.kr/web/view.php?key=20261019029498058	2026-10-20T01:17:37+09:00
 https://www.ekn.kr/web/view.php?key=20261112027258408	2026-11-12T12:38:52+09:00
+https://www.goodkyung.com/news/articleView.html?idxno=293476	2026-11-16T11:35:53+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455441	2026-11-10T04:36:46+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455647	2026-11-12T01:57:27+09:00
 https://www.greened.kr/news/articleView.html?idxno=354318	2026-11-11T01:51:41+09:00
-https://www.gukjenews.com/news/articleView.html?idxno=3724138	2026-10-17T10:08:22+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3725761	2026-10-20T01:17:35+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3726568	2026-10-20T23:10:36+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3726613	2026-10-20T23:10:37+09:00
@@ -131,8 +129,6 @@ https://www.tournews21.com/news/articleView.html?idxno=146144	2026-10-20T10:37:1
 https://www.tournews21.com/news/articleView.html?idxno=146460	2026-10-23T10:17:59+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146624	2026-10-26T10:01:13+09:00
 https://www.tournews21.com/news/articleView.html?idxno=148206	2026-11-12T12:38:51+09:00
-https://www.viva100.com/article/20261017500046	2026-10-17T10:08:23+09:00
-https://www.viva100.com/article/20261017500056	2026-10-17T10:08:24+09:00
 https://www.viva100.com/article/20261019500408	2026-10-20T01:17:32+09:00
 https://www.viva100.com/article/20261023500081	2026-10-23T10:18:02+09:00
 https://www.viva100.com/article/20261027500797	2026-10-28T00:12:00+09:00
