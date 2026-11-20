@@ -1,5 +1,4 @@
 http://www.breaknews.com/1245117	2026-10-23T10:18:00+09:00
-http://www.ccnnews.co.kr/news/articleView.html?idxno=416524	2026-10-21T10:22:04+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416648	2026-10-22T23:24:21+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416662	2026-10-23T10:17:58+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416663	2026-10-23T10:17:58+09:00
@@ -34,8 +33,6 @@ https://n.news.naver.com/mnews/article/586/0000142190?sid=102	2026-11-13T12:13:2
 https://n.news.naver.com/mnews/article/656/0000190402?sid=102	2026-10-23T23:06:54+09:00
 https://n.news.naver.com/mnews/article/656/0000190800?sid=100	2026-10-29T00:47:38+09:00
 https://weekly.hankooki.com/news/articleView.html?idxno=7190513	2026-10-23T23:06:57+09:00
-https://www.aflnews.co.kr/news/articleView.html?idxno=330057	2026-10-21T10:22:03+09:00
-https://www.aflnews.co.kr/news/articleView.html?idxno=330058	2026-10-21T10:22:03+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330118	2026-10-21T23:23:13+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330224	2026-10-23T23:06:55+09:00
 https://www.aflnews.co.kr/news/articleView.html?idxno=330242	2026-10-23T23:06:56+09:00
@@ -47,7 +44,6 @@ https://www.bzeronews.com/news/articleView.html?idxno=824242	2026-10-22T23:24:20
 https://www.bzeronews.com/news/articleView.html?idxno=825139	2026-11-11T01:51:41+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2448127	2026-10-27T00:56:43+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2450919	2026-11-12T12:38:51+09:00
-https://www.ccreview.co.kr/news/articleView.html?idxno=360333	2026-10-21T10:22:02+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360712	2026-10-23T10:18:01+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360958	2026-10-28T00:11:59+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=361105	2026-10-28T11:02:50+09:00
