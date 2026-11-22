@@ -1,6 +1,3 @@
-http://www.breaknews.com/1245117	2026-10-23T10:18:00+09:00
-http://www.ccnnews.co.kr/news/articleView.html?idxno=416662	2026-10-23T10:17:58+09:00
-http://www.ccnnews.co.kr/news/articleView.html?idxno=416663	2026-10-23T10:17:58+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416723	2026-10-24T10:23:39+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416738	2026-10-25T22:36:37+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416801	2026-10-27T00:56:46+09:00
@@ -42,7 +39,6 @@ https://www.bzeronews.com/news/articleView.html?idxno=825139	2026-11-11T01:51:41
 https://www.ccdailynews.com/news/articleView.html?idxno=2448127	2026-10-27T00:56:43+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2450919	2026-11-12T12:38:51+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2452526	2026-11-21T02:38:00+09:00
-https://www.ccreview.co.kr/news/articleView.html?idxno=360712	2026-10-23T10:18:01+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=360958	2026-10-28T00:11:59+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=361105	2026-10-28T11:02:50+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=362489	2026-11-12T12:38:53+09:00
@@ -59,7 +55,6 @@ https://www.goodkyung.com/news/articleView.html?idxno=293476	2026-11-16T11:35:53
 https://www.goodmorningcc.com/news/articleView.html?idxno=455441	2026-11-10T04:36:46+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455647	2026-11-12T01:57:27+09:00
 https://www.greened.kr/news/articleView.html?idxno=354318	2026-11-11T01:51:41+09:00
-https://www.gukjenews.com/news/articleView.html?idxno=3730350	2026-10-23T10:18:00+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3731186	2026-10-23T23:06:58+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3733629	2026-10-27T10:51:05+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3734981	2026-10-28T11:02:50+09:00
@@ -92,8 +87,6 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003279344&CMPT_CD=P00
 https://www.sedaily.com/article/20107072	2026-10-28T11:02:51+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=391756	2026-10-28T00:11:57+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=393835	2026-11-13T12:13:20+09:00
-https://www.tournews21.com/news/articleView.html?idxno=146460	2026-10-23T10:17:59+09:00
 https://www.tournews21.com/news/articleView.html?idxno=146624	2026-10-26T10:01:13+09:00
 https://www.tournews21.com/news/articleView.html?idxno=148206	2026-11-12T12:38:51+09:00
-https://www.viva100.com/article/20261023500081	2026-10-23T10:18:02+09:00
 https://www.viva100.com/article/20261027500797	2026-10-28T00:12:00+09:00
