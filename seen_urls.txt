@@ -1,4 +1,3 @@
-http://www.ccnnews.co.kr/news/articleView.html?idxno=416738	2026-10-25T22:36:37+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416801	2026-10-27T00:56:46+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416803	2026-10-27T00:56:45+09:00
 http://www.ccnnews.co.kr/news/articleView.html?idxno=416866	2026-10-28T00:12:04+09:00
@@ -41,7 +40,6 @@ https://www.ccreview.co.kr/news/articleView.html?idxno=363309	2026-11-21T02:38:0
 https://www.cctoday.co.kr/news/articleView.html?idxno=2239583	2026-11-04T01:52:44+09:00
 https://www.daejonilbo.com/news/articleView.html?idxno=2309916	2026-10-29T00:47:38+09:00
 https://www.dongascience.com/news/view/80817	2026-11-11T11:34:03+09:00
-https://www.dynews.co.kr/news/articleView.html?idxno=870794	2026-10-25T22:36:38+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=871247	2026-10-28T00:11:58+09:00
 https://www.dynews.co.kr/news/articleView.html?idxno=873768	2026-11-13T02:25:51+09:00
 https://www.ekn.kr/web/view.php?key=20261112027258408	2026-11-12T12:38:52+09:00
