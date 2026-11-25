@@ -14,6 +14,7 @@ http://www.chungnamilbo.co.kr/news/articleView.html?idxno=920063	2026-11-11T11:3
 http://www.dtnews24.com/news/articleView.html?idxno=817055	2026-11-11T01:51:40+09:00
 http://www.dtnews24.com/news/articleView.html?idxno=817109	2026-11-12T01:57:26+09:00
 http://www.newsprime.co.kr/news/article.html?no=755855	2026-11-21T02:37:59+09:00
+http://www.newsprime.co.kr/news/article.html?no=756445	2026-11-25T14:15:22+09:00
 https://cc.newdaily.co.kr/site/data/html/2026/11/13/2026111300010.html	2026-11-13T12:13:20+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1418941	2026-10-28T00:12:03+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1424195	2026-11-12T01:57:27+09:00
@@ -53,6 +54,7 @@ https://www.gukjenews.com/news/articleView.html?idxno=3748558	2026-11-12T01:57:2
 https://www.gukjenews.com/news/articleView.html?idxno=3756726	2026-11-19T12:59:31+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3758926	2026-11-21T12:48:59+09:00
 https://www.inews365.com/news/article.html?no=943126	2026-11-12T01:57:24+09:00
+https://www.inews365.com/news/article.html?no=945221	2026-11-25T14:15:22+09:00
 https://www.jbnews.com/news/articleView.html?idxno=1514858	2026-11-02T00:52:36+09:00
 https://www.jbnews.com/news/articleView.html?idxno=1515664	2026-11-12T01:57:22+09:00
 https://www.joongdo.co.kr/web/view.php?key=20261110010003559	2026-11-11T01:51:39+09:00
@@ -77,7 +79,6 @@ https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003279344&CMPT_CD=P00
 https://www.sedaily.com/article/20107072	2026-10-28T11:02:51+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=391756	2026-10-28T00:11:57+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=393835	2026-11-13T12:13:20+09:00
-https://www.tournews21.com/news/articleView.html?idxno=146624	2026-10-26T10:01:13+09:00
 https://www.tournews21.com/news/articleView.html?idxno=148206	2026-11-12T12:38:51+09:00
 https://www.viva100.com/article/20261027500797	2026-10-28T00:12:00+09:00
 https://www.viva100.com/article/20261122500685	2026-11-23T12:33:40+09:00
