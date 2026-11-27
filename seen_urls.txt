@@ -19,7 +19,6 @@ https://cc.newdaily.co.kr/site/data/html/2026/11/13/2026111300010.html	2026-11-1
 https://daily.hankooki.com/news/articleView.html?idxno=1424195	2026-11-12T01:57:27+09:00
 https://daily.hankooki.com/news/articleView.html?idxno=1429554	2026-11-27T03:52:32+09:00
 https://n.news.naver.com/mnews/article/008/0005439161?sid=101	2026-11-11T01:51:38+09:00
-https://n.news.naver.com/mnews/article/011/0004676004?sid=102	2026-10-28T11:02:51+09:00
 https://n.news.naver.com/mnews/article/584/0000040096?sid=105	2026-11-11T11:34:03+09:00
 https://n.news.naver.com/mnews/article/586/0000142190?sid=102	2026-11-13T12:13:20+09:00
 https://n.news.naver.com/mnews/article/656/0000190800?sid=100	2026-10-29T00:47:38+09:00
@@ -31,7 +30,6 @@ https://www.bzeronews.com/news/articleView.html?idxno=825139	2026-11-11T01:51:41
 https://www.ccdailynews.com/news/articleView.html?idxno=2450919	2026-11-12T12:38:51+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2452526	2026-11-21T02:38:00+09:00
 https://www.ccdailynews.com/news/articleView.html?idxno=2453617	2026-11-27T03:52:32+09:00
-https://www.ccreview.co.kr/news/articleView.html?idxno=361105	2026-10-28T11:02:50+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=362489	2026-11-12T12:38:53+09:00
 https://www.ccreview.co.kr/news/articleView.html?idxno=363309	2026-11-21T02:38:01+09:00
 https://www.cctoday.co.kr/news/articleView.html?idxno=2239583	2026-11-04T01:52:44+09:00
@@ -44,11 +42,11 @@ https://www.goodkyung.com/news/articleView.html?idxno=293476	2026-11-16T11:35:53
 https://www.goodmorningcc.com/news/articleView.html?idxno=455441	2026-11-10T04:36:46+09:00
 https://www.goodmorningcc.com/news/articleView.html?idxno=455647	2026-11-12T01:57:27+09:00
 https://www.greened.kr/news/articleView.html?idxno=354318	2026-11-11T01:51:41+09:00
-https://www.gukjenews.com/news/articleView.html?idxno=3734981	2026-10-28T11:02:50+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3748558	2026-11-12T01:57:26+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3756726	2026-11-19T12:59:31+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3758926	2026-11-21T12:48:59+09:00
 https://www.gukjenews.com/news/articleView.html?idxno=3762775	2026-11-26T04:00:44+09:00
+https://www.gukjenews.com/news/articleView.html?idxno=3764882	2026-11-27T13:49:26+09:00
 https://www.inews365.com/news/article.html?no=943126	2026-11-12T01:57:24+09:00
 https://www.inews365.com/news/article.html?no=945221	2026-11-25T14:15:22+09:00
 https://www.jbnews.com/news/articleView.html?idxno=1514858	2026-11-02T00:52:36+09:00
@@ -69,7 +67,7 @@ https://www.newsworker.co.kr/news/articleView.html?idxno=513570	2026-11-12T01:57
 https://www.newsworker.co.kr/news/articleView.html?idxno=514852	2026-11-19T02:52:03+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=515267	2026-11-21T02:38:00+09:00
 https://www.newsworker.co.kr/news/articleView.html?idxno=516121	2026-11-26T04:00:44+09:00
-https://www.sedaily.com/article/20107072	2026-10-28T11:02:51+09:00
+https://www.sentv.co.kr/article/view/sentv202611270057	2026-11-27T13:49:27+09:00
 https://www.sisajournal.com/news/articleView.html?idxno=393835	2026-11-13T12:13:20+09:00
 https://www.tournews21.com/news/articleView.html?idxno=148206	2026-11-12T12:38:51+09:00
 https://www.viva100.com/article/20261122500685	2026-11-23T12:33:40+09:00
